@@ -1,0 +1,33 @@
+URL:
+	http://endo-diabasel.ch/private/Giusi.htm
+
+
+Admin: 
+	http://login-1.hoststar.ch
+Benutzername: 
+	web119
+Passwort: 
+	uranus
+
+	
+FTP host:
+	ftp://login-1.hoststar.ch/html/giusi
+folder: 
+	/html/giusi
+login: 
+	web119
+Password: 
+	uranus
+
+
+MySQL DB:
+	usr_web199_2
+user:
+	web119
+password:
+	calopterix
+Admin:
+	http://login-1.hoststar.ch/phpMyAdmin/?db=usr_web119_2
+
+
+
