@@ -64,7 +64,7 @@ function printRules() {
 	    direkt zwischen den Geschwistern mit Telefon/E-mails bestätigt werden. 
 	    E-mail-Adressen:
 	    <br>&nbsp;&nbsp;<a href="mailto:kellerhp@tele-net.ch?subject=Giuseppina">kellerhp@tele-net.ch</a> (HP &amp; Vrene),
-	    <br>&nbsp;&nbsp;<a href="mailto:ukeller@uhbs.ch?subject=Giuseppina">ukeller@uhbs.ch</a> (Ueli &amp; Reta), 
+	    <br>&nbsp;&nbsp;<a href="mailto:ulrich.keller@unibas.ch?subject=Giuseppina">ulrich.keller@unibas.ch</a> (Ueli &amp; Reta), 
 	    <br>&nbsp;&nbsp;<a href="mailto:l.lamprecht@bluewin.ch?subject=Giuseppina">l.lamprecht@bluewin.ch</a> (Lotte &amp; Edi), 
 	    <br>&nbsp;&nbsp;<a href="mailto:lorimar@bluewin.ch?subject=Giuseppina">lorimar@bluewin.ch</a> (Ruedi &amp; Christine). 
 		</li>
@@ -76,7 +76,7 @@ function printRules() {
 	    Wenn ihr mehrere Zeilen &auml;ndert und erst dann speichern dr&uuml;ckt, wird nur die eine Zeile gespeichert und alle &uuml;brigen &Auml;nderungen gehen verloren.
 	  </li>
 	  <li>
-	  	F&uuml;r Kommentare und Fragen: Email an <a href="mailto:reto.lamprecht@gmx.ch?subject=Giuseppina">reto.lamprecht@web.de</a> schicken.
+	  	F&uuml;r Kommentare und Fragen: Email an <a href="mailto:reto.lamprecht@gmx.ch?subject=Giuseppina">reto.lamprecht@gmx.ch</a> schicken.
 		</li>
 		<li>
 		<b>Kurtaxe: Alle Mieter bezahlen neu ihre Kurtaxe selber, füllen einen Melde-Schein aus und legen den Betrag in die Kasse auf dem Schreibtisch. (Info und Kurtaxe / Nacht sind angegeben auf der Anleitung, die auf dem Schreibtisch liegt.)
