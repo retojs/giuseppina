@@ -20,7 +20,7 @@ Password:
 	uranus
 
 
-MySQL DB:
+MySQL DB (remote):
 	usr_web199_2
 user:
 	web119
@@ -28,6 +28,18 @@ password:
 	calopterix
 Admin:
 	http://login-1.hoststar.ch/phpMyAdmin/?db=usr_web119_2
+
+
+MySQL DB (lokal):
+!! Gibt's keine momentan !!
+	usr_web199_2
+user:
+	web119
+password:
+	calopterix
+Admin:
+	http://login-1.hoststar.ch/phpMyAdmin/?db=usr_web119_2
+
 
 
 
