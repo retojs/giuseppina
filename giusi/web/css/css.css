@@ -1,0 +1,22 @@
+body,td,select,input {
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+table {
+	border: 0px;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 4px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.rules {
+	color: #00b;
+	font-size: 13px;
+	line-height: 20px;
+}
