@@ -20,12 +20,17 @@ $lines = explode(";", $plan);
 foreach ($lines as $line) {
 	list ($woche, $datum, $berechtigt) = split(",", $line);
 	if ($woche != "") {
+		$jahr = trim($jahr);
+		$woche = trim($woche);
+		$datum = trim($datum);
+		$berechtigt = trim($berechtigt);	
 		$q = "INSERT INTO giusiwochen SET jahr='$jahr', woche='$woche', datum='$datum', berechtigt='$berechtigt';";
+		print "<br>$q";
 		$result = mysql_query($q);
 		if (!$result) {
 			print mysql_error();
 		} else {
-			print "<br>woche $woche ($datum, $berechtigt) gesetzt";
+			print "<br> --- OK! Woche $woche ($datum, $berechtigt) gesetzt";
 		}
 	}
 }
@@ -57,7 +62,7 @@ function checkJahr() {
 	    	<input type="text" name="jahr" id="jahr">
 	  	</p>
 	  	<p>
-	  	Belegungsplan eingeben: <br>
+	  	Bbbelegungsplan eingeben: <br>
 	  	Format: <i><strong>Woche, Datum, berechtigt ;</strong></i><br>
 	  	also z.B.: <strong>15, 12.5. - 19.5., Ueli ;</strong>
 	    </p>

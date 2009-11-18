@@ -3,9 +3,9 @@ Data-Import geht so: (siehe auch README.txt, Punkt A)
 0. Mach zur Sicherheit erst mal einen Datenbank dump! (Siehe Punkt E!)
 
 1. Öffne in einem Browser die URL 
-   http://www.paradox.ch/giusi/data-import/initjahr.php
+   http://www.paradox.ch/giusi/initjahr.php
 
-   Source-code der Seite: data-import/initjahr.php
+   Source-code der Seite: initjahr.php
 
 2. Gib dort das gewünschte Jahr sowie den korrekt formatierten Jahresplan ein! 
    Beispiel: 

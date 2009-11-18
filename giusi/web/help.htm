@@ -1,30 +1,30 @@
-See: 
-	http://localhost/giusi/help.htm
-	web/help.htm
-	
------
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
 
 Was willst du machen?
-
-X) Lokal entwickeln.
-
-A) neuen Jahresplan importieren
-
-B) Das Projekt backupen
-
-C) Files auf den Server FTPlen
-
-D) Datenbank ansehen/manipulieren
-
-E) Datenbank dump erstellen
-
-
------
-
-So funktioniert's:
+<ul>
+	<li>
+		<a href="#local">Lokal entwickeln</a>
+	</li><li>
+		<a href="#import">neuen Jahresplan importieren</a>
+	</li><li>
+		<a href="#ftp">Files auf den Server FTPlen</a>
+	</li><li>
+		<a href="#db">Datenbank ansehen/manipulieren</a>
+	</li><li>
+		<a href="#dump">Datenbank dump erstellen</a>
+	</li>
+</ul>
 
 
-X) Lokal entwickeln.
+
+<a name="local">
+<h3>Lokal entwickeln.</h3>
 
 Dank dem Eintrag 
   Alias /giusi "K:/workspace_eclipse_php/giusi/web"
@@ -47,8 +47,8 @@ Q: Die localhost URL funktioniert nicht. Apache will nicht starten.
 A: Jemand anders (z.B. Ruby) blockiert den Port. --> Klick das rote I unten rechts und stoppe Apache und MySQL
 
 
-
-A) neuen Jahresplan importieren
+<a name="import">
+<h3>Neuen Jahresplan importieren</h3>
 
 --> Um den Jahresplan zu generieren, benutze die Klasse ch.hyperraum.giusi.CalendarGenerator.java im Java-Projekt tools! (Location: F:\workspace_eclipse_java\tools)
 
@@ -72,13 +72,8 @@ A) neuen Jahresplan importieren
 3. Eingabe prüfen (Punkt D) und z.B.
    SELECT * FROM `giusiwochen` WHERE jahr=2007
    
-4. giusi.php anpassen:
-
-	<?php printYear(2010, true, true, "giusi.php"); ?>
-
-   Solange der alte Plan noch aktuell ist, kannst du den neuen in giusi.php verlinken mit (Bsp. für 2007):
-   
-   	<a href="history.php?jahr=2007">Belegungsplan für das Jahr 2007</a>
+4. Solange der alte Plan noch aktuell ist, kannst du den neuen in giusi.php verlinken mit (Bsp. für 2007):
+   <a href="history.php?jahr=2007">Belegungsplan für das Jahr 2007</a>
 				
 5. giusi.php auf den server per FTP (siehe Punkt C)
 
@@ -96,8 +91,8 @@ Q: Es wird nur eine Woche gesetzt, obwohl ich alle eingegeben habe
 A: Wetten du hast das Semikolon (;) am Ende jeder Zeile vergessen?
 
 
-
-C) Files auf den Server FTPlen
+<a name="ftp">
+<h3>Files auf den Server FTPlen</h3>
 
 Zugangsdaten siehe: admin/login.txt
 FTP-URL: 
@@ -105,26 +100,22 @@ FTP-URL:
 URL von PHPMyAdmin:
   http://login-1.hoststar.ch/user/index.php
 
+<a name="db">
+<h3>Datenbank ansehen/manipulieren</h3>
 
-D) Datenbank ansehen/manipulieren
+1. Log dich auf hoststar ein: 
+    http://login-1.hoststar.ch/user/index.php (web119/uranus)
+2. Wähle Datenbank > PhpMyAdmin und log dich ein (web119/calopterix)
+3. Wähle die Datenbank usr_web119_2 und die Tabelle "giusiwochen"
+4. Wähle im horizontalen Menu "Anzeigen", "Struktur" oder "SQL"
 
-goto:
-	http://login-1.hoststar.ch/phpMyAdmin/?db=usr_web119_2
+<a name="dump">
+<h3>Datenbank dump erstellen</h3>
 
-oder:
-	1. Log dich auf hoststar ein: 
-	    http://login-1.hoststar.ch/user/index.php (web119/uranus)
-	2. Wähle MySQL und log dich ein (web119/calopterix)
-	3. Wähle die Datenbank usr_web119_2 und die Tabelle "giusiwochen"
-	4. Wähle im horizontalen Menu "Anzeigen", "Struktur" oder "SQL"
-
-
-E) Datenbank dump erstellen
-
-1. Zum Einloggen sehe Punkt D!
-2. Wähle im horizontalen Menu "Exportieren"
-3. Alle Einstellungen sind ok so, einfach unten "OK" klicken
-4. Den dump per copy/paste sichern: 
+1.-3. Zum Einloggen führe Punkte 1.-3. von Punkt D aus!
+4. Wähle im horizontalen Menu "Exportieren"
+5. Alle Einstellungen sind ok so, einfach unten "OK" klicken
+6. Den dump per copy/paste sichern: 
    1. CTRL-A (alles auswählen)
    2. CTRL-C (copy)
    3. das file data-import/SQL_dump.txt öffnen.
@@ -133,3 +124,7 @@ E) Datenbank dump erstellen
    6. CTRL-S (speichern)
 
 
+
+
+</body>
+</html>
