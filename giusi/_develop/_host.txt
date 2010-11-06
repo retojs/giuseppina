@@ -33,7 +33,7 @@ Admin:
 MySQL DB (lokal):
 !! Gibt's keine momentan !!
 	usr_web199_2
-user:
+user: 
 	web119
 password:
 	calopterix
