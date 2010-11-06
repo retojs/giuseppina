@@ -1,0 +1,208 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Erstellungszeit: 06. November 2010 um 14:46
+-- Server Version: 5.0.45
+-- PHP-Version: 5.2.9
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Datenbank: `usr_web119_2`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `giusiwochen`
+--
+
+CREATE TABLE `giusiwochen` (
+  `jahr` int(8) NOT NULL default '0',
+  `woche` int(4) NOT NULL default '0',
+  `datum` varchar(20) default NULL,
+  `berechtigt` varchar(20) default NULL,
+  `text` varchar(250) default NULL,
+  `naechte` varchar(200) NOT NULL default ''
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Daten für Tabelle `giusiwochen`
+--
+
+INSERT INTO `giusiwochen` VALUES(2005, 15, ' 09.4. - 16.4.', ' Ueli', '', '');
+INSERT INTO `giusiwochen` VALUES(2005, 16, ' 16.4. - 23.4.', ' Ueli', '', '');
+INSERT INTO `giusiwochen` VALUES(2005, 17, ' 23.4. - 30.4.', ' Lieselotte', 'Martin Brütsch (Ruedi)', '');
+INSERT INTO `giusiwochen` VALUES(2005, 18, ' 30.4. - 07.4.', ' Lieselotte', 'Ruedi und Christina', '');
+INSERT INTO `giusiwochen` VALUES(2005, 19, ' 07.5. - 14.5.', ' Ruedi', 'Reto 13. - 16. (Lieselotte)', '3');
+INSERT INTO `giusiwochen` VALUES(2005, 20, ' 14.5. - 21.5.', ' Ruedi', '', '');
+INSERT INTO `giusiwochen` VALUES(2005, 21, ' 21.5. - 28.5.', ' Hanspi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2005, 22, ' 28.5. - 04.6.', ' Hanspi', 'Hanspi und Verena', '');
+INSERT INTO `giusiwochen` VALUES(2005, 23, ' 04.6. - 11.6.', ' Ueli', 'Hanspi und Verena (Hanspi)', '9 HP');
+INSERT INTO `giusiwochen` VALUES(2005, 24, ' 11.6. - 18.6.', ' Ueli', 'Hanspi und Verena (Hanspi)', '');
+INSERT INTO `giusiwochen` VALUES(2005, 25, ' 18.6. - 25.6.', ' Lieselotte', 'Schumacher (Lieselotte)', '7');
+INSERT INTO `giusiwochen` VALUES(2005, 26, ' 25.6. - 02.7.', ' Lieselotte', 'Delia  (Peter Keller)', '2 Kinder');
+INSERT INTO `giusiwochen` VALUES(2005, 27, ' 02.7. - 09.7.', ' Ruedi', 'Delia bis 3. Juli, 4. - 8. Magnus (Reto)', '3 Reto');
+INSERT INTO `giusiwochen` VALUES(2005, 28, ' 09.7. - 16.7.', ' Ruedi', 'Reto 8. - 10.  und 14. - 15. (Lieselotte)', '4 HP, 3 Reto');
+INSERT INTO `giusiwochen` VALUES(2005, 29, ' 16.7. - 23.7.', ' Hanspi', 'Keller Kinder Kreuzlingen', '');
+INSERT INTO `giusiwochen` VALUES(2005, 30, ' 23.7. - 30.7.', ' Hanspi', 'Keller Kinder Kreuzlingen', '7 Kinder');
+INSERT INTO `giusiwochen` VALUES(2005, 31, ' 30.7. - 06.8', ' Ueli', 'Flurina und Franz (Fluri)', '5 UK');
+INSERT INTO `giusiwochen` VALUES(2005, 32, ' 06.8. - 13.8.', ' Ueli', 'Ueli & Reta UK)', '5 UK');
+INSERT INTO `giusiwochen` VALUES(2005, 33, ' 13.8. - 20.8.', ' Lieselotte', 'Michael Thoma', '');
+INSERT INTO `giusiwochen` VALUES(2005, 34, ' 20.8. - 27.8.', ' Lieselotte', 'Markus Zehder', '');
+INSERT INTO `giusiwochen` VALUES(2005, 35, ' 27.8. - 03.9.', ' Ruedi', 'Markus Zehder', '');
+INSERT INTO `giusiwochen` VALUES(2005, 36, ' 03.9. - 10.9.', ' Ruedi', '9.9. - 11. 9. Reto (Lieselotte)', '');
+INSERT INTO `giusiwochen` VALUES(2005, 37, ' 10.9. - 17.9.', ' Hanspi', '10./11.9. Reto', '');
+INSERT INTO `giusiwochen` VALUES(2005, 38, ' 17.9. - 24.9.', ' Hanspi', 'Hanspi und Verena (HP)', '');
+INSERT INTO `giusiwochen` VALUES(2005, 39, ' 24.9. - 01.10', ' Ueli', 'Hanspi und Verena (UK)', '');
+INSERT INTO `giusiwochen` VALUES(2005, 40, ' 01.10. - 08.10.', ' Ueli', '', '');
+INSERT INTO `giusiwochen` VALUES(2005, 41, ' 08.10. - 15.10.', ' Lieselotte', 'Lotta und Edi', '5 L&E');
+INSERT INTO `giusiwochen` VALUES(2005, 42, ' 15.10. - 22.10.', ' Lieselotte', 'Micael Thoma', '');
+INSERT INTO `giusiwochen` VALUES(2005, 13, ' 26.3. - 02.4.', ' Hanspi', 'Hanspi und Verena', '');
+INSERT INTO `giusiwochen` VALUES(2005, 14, ' 02.4. - 09.4.', ' Hanspi', 'Hanspi und Verena', '3 HP');
+INSERT INTO `giusiwochen` VALUES(2006, 15, '	08.4. - 15.4.', '		Lotte', 'Reto bzw. Schumachers', '');
+INSERT INTO `giusiwochen` VALUES(2006, 16, '	15.4. - 22.4.', '		Lotte', 'Reto bzw. Schumachers', '3 Reto');
+INSERT INTO `giusiwochen` VALUES(2006, 17, '	22.4. - 29.4.', '		Ruedi', 'Ruedi / Lotta und Edi auf Besuch', '6 Ruedi');
+INSERT INTO `giusiwochen` VALUES(2006, 18, '	29.4. - 06.5.', '		Ruedi', '', '');
+INSERT INTO `giusiwochen` VALUES(2006, 19, '	06.5. - 13.5.', '		Hanspi', '', '');
+INSERT INTO `giusiwochen` VALUES(2006, 20, '	13.5. - 20.5.', '		Hanspi', '', '');
+INSERT INTO `giusiwochen` VALUES(2006, 21, '	20.5. - 27.5.', '		Ueli', 'Peter bzw. Delia (von 25.5.-28.5.)', '');
+INSERT INTO `giusiwochen` VALUES(2006, 22, '	27.5. - 03.6.', '		Ueli', '', '');
+INSERT INTO `giusiwochen` VALUES(2006, 23, '	03.6. - 10.6.', '		Lotte', '', '');
+INSERT INTO `giusiwochen` VALUES(2006, 24, '	10.6. - 17.6.', '		Lotte', 'Hanspi + Vrene', '13 V und HP');
+INSERT INTO `giusiwochen` VALUES(2006, 25, '	17.6. - 24.6.', '		Ruedi', 'Hanspi + Vrene (bis 25.6.)', '');
+INSERT INTO `giusiwochen` VALUES(2006, 26, '	24.6. - 01.7.', '		Ruedi', 'Reto (Wochenende 30.-2.)', '2 Reto');
+INSERT INTO `giusiwochen` VALUES(2006, 27, '	01.7. - 08.7.', '		Hanspi', 'Reto (Wochenende 30.-2.)', '');
+INSERT INTO `giusiwochen` VALUES(2006, 28, '	08.7. - 15.7.', '		Hanspi', 'Hanspi + Vrene', '6 V und HP');
+INSERT INTO `giusiwochen` VALUES(2006, 29, '	15.7. - 22.7.', '		Ueli', '16, - 21,.7.  Ruedi  (Michael Thoma)', '');
+INSERT INTO `giusiwochen` VALUES(2006, 30, '	22.7. - 29.7.', '		Ueli', 'Ueli', '8 Ueli & Reta');
+INSERT INTO `giusiwochen` VALUES(2006, 31, '	29.7. - 05.8.', '		Lotte', 'Lotta und Edi', '5 Lotte & Edi');
+INSERT INTO `giusiwochen` VALUES(2006, 32, '	05.8. - 12.8.', '		Lotte', 'Lotta und Edi', '3 Lotte & Edi');
+INSERT INTO `giusiwochen` VALUES(2006, 33, '	12.8. - 19.8.', '		Ruedi', 'Ruedi (Michael Thoma)', '');
+INSERT INTO `giusiwochen` VALUES(2006, 34, '	19.8. - 26.8.', '		Ruedi', 'Peter Keller', '3 Peter');
+INSERT INTO `giusiwochen` VALUES(2006, 35, '	26.8. - 02.9.', '		Hanspi', 'Hanspi + Vrene  (Sohn Ruedi)', '6 Ruedi');
+INSERT INTO `giusiwochen` VALUES(2006, 36, '	02.9. - 09.9.', '		Hanspi', 'Hanspi + Vrene', '6 V und HP');
+INSERT INTO `giusiwochen` VALUES(2006, 37, '	09.9. - 16.9.', '		Ueli', 'Reto (Schumacher 13. - 20.)', '7 Schumacher');
+INSERT INTO `giusiwochen` VALUES(2006, 38, '	16.9. - 23.9.', '		Ueli', 'Reto (Schumacher 21. - 28.)', '');
+INSERT INTO `giusiwochen` VALUES(2006, 39, '	23.9. - 30.9.', '		Lotte', 'Reto', '');
+INSERT INTO `giusiwochen` VALUES(2006, 40, '	30.9. - 7.10.', '		Lotte', '4.10. - 7. 10. ( Michael Thoma)', '');
+INSERT INTO `giusiwochen` VALUES(2006, 41, '	7.10. - 14.10.', '		Ruedi', 'Ruedi', '8 Ruedi');
+INSERT INTO `giusiwochen` VALUES(2006, 42, '	14.10.- 21.10.', '		Ruedi', 'Ruedi', '');
+INSERT INTO `giusiwochen` VALUES(2007, 32, '04.8. - 11.8.', 'Ruedi', 'Michael Thoma', '');
+INSERT INTO `giusiwochen` VALUES(2007, 31, '28.7. - 04.8.', 'Ruedi', 'Michael Thoma', '');
+INSERT INTO `giusiwochen` VALUES(2007, 30, '21.7. - 28.7.', 'Lotte', 'Lotte hat diese Woche Ueli abgegeben', '');
+INSERT INTO `giusiwochen` VALUES(2007, 29, '14.7. - 21.7.', 'Lotte', 'Michael Thoma', '');
+INSERT INTO `giusiwochen` VALUES(2007, 28, '07.7. - 14.7.', 'Ueli', 'Christine, Flurina und Olivia', '');
+INSERT INTO `giusiwochen` VALUES(2007, 27, '30.6. - 07.7.', 'Ueli', 'Christine', '');
+INSERT INTO `giusiwochen` VALUES(2007, 26, '23.6. - 30.6.', 'Hanspi', 'Verena und Hanspi', '8');
+INSERT INTO `giusiwochen` VALUES(2007, 25, '16.6. - 23.6.', 'Hanspi', 'Verena und Hanspi', '');
+INSERT INTO `giusiwochen` VALUES(2007, 24, '09.6. - 16.6.', 'Ruedi', 'Patrick (11. bis 14.Juni)', '');
+INSERT INTO `giusiwochen` VALUES(2007, 23, '02.6. - 09.6.', 'Ruedi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2007, 22, '26.5. - 02.6.', 'Lotte', '', '');
+INSERT INTO `giusiwochen` VALUES(2007, 21, '19.5. - 26.5.', 'Lotte', '', '');
+INSERT INTO `giusiwochen` VALUES(2007, 20, '12.5. - 19.5.', 'Ueli', 'Verena und Hanspeter (für Ueli o.k.)', '12');
+INSERT INTO `giusiwochen` VALUES(2007, 19, '05.5. - 12.5.', 'Ueli', 'Verena und Hanspeter (für Ueli o.k.)', '');
+INSERT INTO `giusiwochen` VALUES(2007, 18, '28.4. - 05.5.', 'Hanspi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2007, 17, '21.4. - 28.4.', 'Hanspi', 'Reto (27. bis 29. April)', '2');
+INSERT INTO `giusiwochen` VALUES(2007, 16, '14.4. - 21.4.', 'Ruedi', '', '');
+INSERT INTO `giusiwochen` VALUES(2007, 15, '07.4. - 14.4.', 'Ruedi', '', '');
+INSERT INTO `giusiwochen` VALUES(2007, 33, '11.8. - 18.8.', 'Hanspi', '', '');
+INSERT INTO `giusiwochen` VALUES(2007, 34, '18.8. - 25.8.', 'Hanspi', '', '');
+INSERT INTO `giusiwochen` VALUES(2007, 35, '25.8. - 01.9.', 'Ueli', '', '');
+INSERT INTO `giusiwochen` VALUES(2007, 36, '01.9. - 08.9.', 'Ueli', 'Andreas (3.-8. Sept.)', '5');
+INSERT INTO `giusiwochen` VALUES(2007, 37, '08.9. - 15.9.', 'Lotte', 'Reto, (8. - 11. Seraina)', '2');
+INSERT INTO `giusiwochen` VALUES(2007, 38, '15.9. - 22.9.', 'Lotte', 'Reto', '');
+INSERT INTO `giusiwochen` VALUES(2007, 39, '22.9. - 29.9.', 'Ruedi', 'Verena und Hanspi  ( für Ruedi o.k.)', '');
+INSERT INTO `giusiwochen` VALUES(2007, 40, '29.9. - 06.10.', 'Ruedi', 'Verena und Hanspi ( für Ruedi o.k.)', '9');
+INSERT INTO `giusiwochen` VALUES(2007, 41, '06.10. - 13.10', 'Hanspi', 'Ruedi oder Lotte', '');
+INSERT INTO `giusiwochen` VALUES(2007, 42, '13.10.- 20.10.', 'Hanspi', 'Michael Thoma', '');
+INSERT INTO `giusiwochen` VALUES(2008, 40, ' 27.09. - 04.10.', ' Hanspi', 'Verena und Hanspeter', '6');
+INSERT INTO `giusiwochen` VALUES(2008, 39, ' 20.09. - 27.09.', ' Hanspi', 'Verena und Hanspeter', '');
+INSERT INTO `giusiwochen` VALUES(2008, 38, ' 13.09. - 20.09.', ' Ruedi', 'Hanspeter und M. Robbe, mit Ruedi abgesprochen', '5');
+INSERT INTO `giusiwochen` VALUES(2008, 37, ' 06.09. - 13.09.', ' Ruedi', 'Seraina bis 9.09, mit Ruedi abgesprochen', '');
+INSERT INTO `giusiwochen` VALUES(2008, 36, ' 30.08. - 06.09.', ' Lotte', 'Verena Keller und Silvia, ganze Woche', '8');
+INSERT INTO `giusiwochen` VALUES(2008, 35, ' 23.08. - 30.08.', ' Lotte', 'Verena Keller, mit Lotta abgesprochen (Tel. 10.06.2008)', '8');
+INSERT INTO `giusiwochen` VALUES(2008, 34, ' 16.08. - 23.08.', ' Ueli', 'Ruedi Keller (Kreuzlingen), bis Mitte Woche (Tausch mit HP)', '');
+INSERT INTO `giusiwochen` VALUES(2008, 33, ' 09.08. - 16.08.', ' Ueli', 'Peter Keller (Tausch mit HP)', '');
+INSERT INTO `giusiwochen` VALUES(2008, 32, ' 02.08. - 09.08.', ' Hanspi', 'Tausch mit Ueli : Ueli & Reta gehen', '6');
+INSERT INTO `giusiwochen` VALUES(2008, 31, ' 26.07. - 02.08.', ' Hanspi', 'Michael Thoma, bis 30.07.08 (Mi) mit Vrena abgesprochen (Lotta)', '5');
+INSERT INTO `giusiwochen` VALUES(2008, 30, ' 19.07. - 26.07.', ' Ruedi', 'Michael Thoma', '5');
+INSERT INTO `giusiwochen` VALUES(2008, 29, ' 12.07. - 19.07.', ' Ruedi', 'Michael Thoma', '5');
+INSERT INTO `giusiwochen` VALUES(2008, 28, ' 05.07. - 12.07.', ' Lotte', 'Reto (Schumachers)', '3');
+INSERT INTO `giusiwochen` VALUES(2008, 27, ' 28.06. - 05.07.', ' Lotte', 'Reto (ab Donnerstag Abend)', '3');
+INSERT INTO `giusiwochen` VALUES(2008, 26, ' 21.06. - 28.06.', ' Ueli', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2008, 25, ' 14.06. - 21.06.', ' Ueli', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2008, 24, ' 07.06. - 14.06.', ' Hanspi', 'Verena und HP', '6');
+INSERT INTO `giusiwochen` VALUES(2008, 23, ' 31.05. - 07.06.', ' Hanspi', 'Verena und HP', '');
+INSERT INTO `giusiwochen` VALUES(2008, 22, ' 24.05. - 31.05.', ' Ruedi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2008, 21, ' 17.05. - 24.05.', ' Ruedi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2008, 20, ' 10.05. - 17.05.', ' Lotte', 'Reto', '');
+INSERT INTO `giusiwochen` VALUES(2008, 19, ' 03.05. - 10.05.', ' Lotte', 'Reto', '3');
+INSERT INTO `giusiwochen` VALUES(2008, 18, ' 26.04. - 03.05.', ' Ueli', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2008, 17, ' 19.04. - 26.04.', ' Ueli', ' Ruedi bis Mi 23.04.08', '4');
+INSERT INTO `giusiwochen` VALUES(2008, 16, ' 12.04. - 19.04.', ' Hanspi', '', '');
+INSERT INTO `giusiwochen` VALUES(2008, 15, ' 05.04. - 12.04.', ' Hanspi', '', '');
+INSERT INTO `giusiwochen` VALUES(2008, 41, ' 04.10. - 11.10.', ' Ueli', 'ch stüssi v hanspi', '6');
+INSERT INTO `giusiwochen` VALUES(2008, 42, ' 11.10. - 18.10.', ' Ueli', 'Andreas', '5');
+INSERT INTO `giusiwochen` VALUES(2009, 15, ' 04.04. - 11.04.', ' Ueli', 'Ueli& Reta: wir gehen doch nicht, ua. wg Wetter', '');
+INSERT INTO `giusiwochen` VALUES(2009, 16, ' 11.04. - 18.04.', ' Ueli', '', '');
+INSERT INTO `giusiwochen` VALUES(2009, 17, ' 18.04. - 25.04.', ' Lotte', 'Lotta & Edi', '4');
+INSERT INTO `giusiwochen` VALUES(2009, 18, ' 25.04. - 02.05.', ' Lotte', 'Reto 30. April bis 2. Mai', '3');
+INSERT INTO `giusiwochen` VALUES(2009, 19, ' 02.05. - 09.05.', ' Ruedi', 'Reto 2. und 3. Mai', '');
+INSERT INTO `giusiwochen` VALUES(2009, 20, ' 09.05. - 16.05.', ' Ruedi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2009, 21, ' 16.05. - 23.05.', ' Hanspi', 'Vrene und Hanspi', '');
+INSERT INTO `giusiwochen` VALUES(2009, 22, ' 23.05. - 30.05.', ' Hanspi', 'Vrene und Hanspi', '7');
+INSERT INTO `giusiwochen` VALUES(2009, 23, ' 30.05. - 06.06.', ' Ueli', 'am Fr. 5.6.09   Putztag Frau Zarbl  inkl. Fester', '');
+INSERT INTO `giusiwochen` VALUES(2009, 24, ' 06.06. - 13.06.', ' Ueli', 'Flurina und Christine mit Olivia und Tim', '');
+INSERT INTO `giusiwochen` VALUES(2009, 25, ' 13.06. - 20.06.', ' Lotte', 'Hanspi und Verena (mit Lotta abgesprochen)', '7');
+INSERT INTO `giusiwochen` VALUES(2009, 26, ' 20.06. - 27.06.', ' Lotte', 'Reto (Wochenende ab 25.6.)', '3');
+INSERT INTO `giusiwochen` VALUES(2009, 27, ' 27.06. - 04.07.', ' Ruedi', 'Reto bis und mit 28.6.', '');
+INSERT INTO `giusiwochen` VALUES(2009, 28, ' 04.07. - 11.07.', ' Ruedi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2009, 29, ' 11.07. - 18.07.', ' Hanspi', 'HP Keller Kinder, Barbara', '3');
+INSERT INTO `giusiwochen` VALUES(2009, 30, ' 18.07. - 25.07.', ' Hanspi', 'Peter Keller', '3');
+INSERT INTO `giusiwochen` VALUES(2009, 31, ' 25.07. - 01.08.', ' Ueli', 'Ueli & Reta', '9');
+INSERT INTO `giusiwochen` VALUES(2009, 32, ' 01.08. - 08.08.', ' Ueli', 'Andreas Keller', '5');
+INSERT INTO `giusiwochen` VALUES(2009, 33, ' 08.08. - 15.08.', ' Lotte', 'Lotta & Edi', '4');
+INSERT INTO `giusiwochen` VALUES(2009, 34, ' 15.08. - 22.08.', ' Lotte', '', '');
+INSERT INTO `giusiwochen` VALUES(2009, 35, ' 22.08. - 29.08.', ' Ruedi', '27. bis 30.8. Michael Thoma', '3');
+INSERT INTO `giusiwochen` VALUES(2009, 36, ' 29.08. - 05.09.', ' Ruedi', 'ab 3.9. Vrene und Hanspi', '10');
+INSERT INTO `giusiwochen` VALUES(2009, 37, ' 05.09. - 12.09.', ' Hanspi', 'Vrene und Hanspi', '');
+INSERT INTO `giusiwochen` VALUES(2009, 38, ' 12.09. - 19.09.', ' Hanspi', '', '');
+INSERT INTO `giusiwochen` VALUES(2009, 39, ' 19.09. - 26.09.', ' Ueli', 'von So 20.9. bis Mi 23.9. Steffen (Reto)', '');
+INSERT INTO `giusiwochen` VALUES(2009, 40, ' 26.09. - 03.10.', ' Ueli', '', '');
+INSERT INTO `giusiwochen` VALUES(2009, 41, ' 03.10. - 10.10.', ' Lotte', 'Christina & Ruedi (mit L. abgesprochen)', '8');
+INSERT INTO `giusiwochen` VALUES(2009, 42, ' 10.10. - 17.10.', ' Lotte', 'Lotta & Edi', '5');
+INSERT INTO `giusiwochen` VALUES(2010, 13, '27.03. - 03.04.', 'Ueli', 'Giusi-Putz 29.+30.3.10. /', '');
+INSERT INTO `giusiwochen` VALUES(2010, 14, '03.04. - 10.04.', 'Ueli', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2010, 42, '16.10. - 23.10.', 'Ruedi', 'Lotte und Edi ', '5');
+INSERT INTO `giusiwochen` VALUES(2010, 41, '09.10. - 16.10.', 'Ruedi', 'Lotte & Edi (mit Ruedi abgesprochen)', '');
+INSERT INTO `giusiwochen` VALUES(2010, 40, '02.10. - 09.10.', 'Lotte', '4.+5. Oktober: Maler Dolci. Ab 6. Okt wieder benutzbar./9.-11. Seraina', '');
+INSERT INTO `giusiwochen` VALUES(2010, 39, '25.09. - 02.10.', 'Lotte', 'Michael Thoma, Do 30.9.- So 3.10, mit Lotte abgesprochen', '');
+INSERT INTO `giusiwochen` VALUES(2010, 38, '18.09. - 25.09.', 'Ueli', '', '');
+INSERT INTO `giusiwochen` VALUES(2010, 37, '11.09. - 18.09.', 'Ueli', 'Steffen (Reto) / 18.09/19.09 Seraina (mit Reto abgesprochen)', '');
+INSERT INTO `giusiwochen` VALUES(2010, 36, '04.09. - 11.09.', 'Hanspi', 'Vrena und Hanspi', '');
+INSERT INTO `giusiwochen` VALUES(2010, 35, '28.08. - 04.09.', 'Hanspi', 'Vrena und Hanspi', '14');
+INSERT INTO `giusiwochen` VALUES(2010, 34, '21.08. - 28.08.', 'Ruedi', '', '');
+INSERT INTO `giusiwochen` VALUES(2010, 33, '14.08. - 21.08.', 'Ruedi', 'Michael Thoma, mit Ruedi abgesprochen', '3');
+INSERT INTO `giusiwochen` VALUES(2010, 32, '07.08. - 14.08.', 'Lotte', 'Reto (Sa-So), Michael Thoma (Mo 9.8.- Fr 13.8.) mit Lotte abgesprochen', '2');
+INSERT INTO `giusiwochen` VALUES(2010, 31, '31.07. - 07.08.', 'Lotte', 'Inge & Eugen Schumacher (Mo-Do); Reto (Do-Sa)', '2 (Reto)');
+INSERT INTO `giusiwochen` VALUES(2010, 30, '24.07. - 31.07.', 'Ueli', 'unerwartet frei!', '');
+INSERT INTO `giusiwochen` VALUES(2010, 29, '17.07. - 24.07.', 'Ueli', '22.7. - 24.7.  Michael Thoma', '2');
+INSERT INTO `giusiwochen` VALUES(2010, 28, '10.07. - 17.07.', 'Hanspi', '', '');
+INSERT INTO `giusiwochen` VALUES(2010, 27, '03.07. - 10.07.', 'Hanspi', 'HP Keller Kinder', '7');
+INSERT INTO `giusiwochen` VALUES(2010, 26, '26.06. - 03.07.', 'Ruedi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2010, 25, '19.06. - 26.06.', 'Ruedi', '24. bis 27. Michael Thoma', '3');
+INSERT INTO `giusiwochen` VALUES(2010, 24, '12.06. - 19.06.', 'Lotte', 'HP und Vrena (mit Lotta abgesprochen)', '5');
+INSERT INTO `giusiwochen` VALUES(2010, 23, '05.06. - 12.06.', 'Lotte', 'HP und Vrena (mit Lotta abgesprochen)', '');
+INSERT INTO `giusiwochen` VALUES(2010, 22, '29.05. - 05.06.', 'Ueli', 'Christine', '');
+INSERT INTO `giusiwochen` VALUES(2010, 21, '22.05. - 29.05.', 'Ueli', 'Christine', '');
+INSERT INTO `giusiwochen` VALUES(2010, 20, '15.05. - 22.05.', 'Hanspi', 'Flurina und Franz (mit HP abgesprochen)', '');
+INSERT INTO `giusiwochen` VALUES(2010, 19, '08.05. - 15.05.', 'Hanspi', 'Flurina und Franz (mit HP abgesprochen)', '');
+INSERT INTO `giusiwochen` VALUES(2010, 18, '01.05. - 08.05.', 'Ruedi', 'HP und Verena (mit Ruedi abgesprochen)', '');
+INSERT INTO `giusiwochen` VALUES(2010, 17, '24.04. - 01.05.', 'Ruedi', 'Vrene und Hanspi (mit Ruedi abgesprochen)', '6');
+INSERT INTO `giusiwochen` VALUES(2010, 16, '17.04. - 24.04.', 'Lotte', 'Ruedi (mit Lotte abgesprochen)', '');
+INSERT INTO `giusiwochen` VALUES(2010, 15, '10.04. - 17.04.', 'Lotte', '', '');
+INSERT INTO `giusiwochen` VALUES(2010, 12, '20.03. - 27.03.', 'Hanspi', NULL, '');
+INSERT INTO `giusiwochen` VALUES(2010, 43, '23.10. - 30.10.', 'Hanspi', 'Verena und HP', '');
