@@ -62,7 +62,7 @@ function checkJahr() {
 	    	<input type="text" name="jahr" id="jahr">
 	  	</p>
 	  	<p>
-	  	Bbbelegungsplan eingeben: <br>
+	  	Belegungsplan eingeben: <br>
 	  	Format: <i><strong>Woche, Datum, berechtigt ;</strong></i><br>
 	  	also z.B.: <strong>15, 12.5. - 19.5., Ueli ;</strong>
 	    </p>
