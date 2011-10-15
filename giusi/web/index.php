@@ -1,6 +1,6 @@
 <?php
 
-$menu_url = "http://www.paradox.ch/giusi/menu.htm";
+$menu_url = "http://www.paradox.ch/giusi/menu.php";
 $content_url = "http://www.paradox.ch/giusi/giusi.php";
 
 if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
