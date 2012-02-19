@@ -11,14 +11,14 @@ include "update.php";
 	</head>
 	<body bgcolor="#ffff99">
 		
-		<?php printYear(2011, true, true, "giusi.php"); ?>
+		<?php printYear(2012, true, true, "giusi.php"); ?>
 	
 		<p>&nbsp;</p>
 		
 		<!-- vergangene und zukünftige Jahre -->
 		<p>
 			<b>
-				<a href="history.php?jahr=2012">Belegungsplan für das Jahr 2012</a>
+				<a href="history.php?jahr=2011">Belegungsplan für das Jahr 2011</a>
 				<br><br>
 				<a href="history.php?jahr=2010">Belegungsplan für das Jahr 2010</a>
 				<br><br>
