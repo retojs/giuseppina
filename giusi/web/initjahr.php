@@ -57,7 +57,7 @@ function checkJahr() {
 </head>
 
 <body>
-	<form name="form1" method="post" action="initjahr.php">
+	<form id="form1" method="post" action="initjahr.php">
 		<p> Jahr:
 	    	<input type="text" name="jahr" id="jahr">
 	  	</p>
