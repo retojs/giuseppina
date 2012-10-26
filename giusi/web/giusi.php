@@ -18,6 +18,8 @@ include "update.php";
 		<!-- vergangene und zukünftige Jahre -->
 		<p>
 			<b>
+				<a href="history.php?jahr=2013">Belegungsplan für das Jahr 2013</a>
+				<br><br>
 				<a href="history.php?jahr=2011">Belegungsplan für das Jahr 2011</a>
 				<br><br>
 				<a href="history.php?jahr=2010">Belegungsplan für das Jahr 2010</a>
