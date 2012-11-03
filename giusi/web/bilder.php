@@ -15,7 +15,15 @@ body {
 
 <center>
 
-<div>Fotos aufgenommen von Ueli</div>
+<div>die neuen Sitzpolster</div>
+<br />
+
+<img src="bilder/neue_sitzpolster.jpg" /><br />
+<br />
+<img src="bilder/neue_sitzpolster2.jpg" /><br />
+<br />
+
+<div>weitere Fotos aufgenommen von Ueli</div>
 <br />
 
 <img src="bilder/43.png" /><br />

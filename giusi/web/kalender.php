@@ -70,7 +70,8 @@ function printRules() {
 	&nbsp;&nbsp;<a href="mailto:kellerhp@tele-net.ch?subject=Giuseppina">kellerhp@tele-net.ch</a> (HP &amp; Vrene), <br>
 	&nbsp;&nbsp;<a href="mailto:ulrich.keller@unibas.ch?subject=Giuseppina">ulrich.keller@unibas.ch</a> (Ueli &amp; Reta), <br>
 	&nbsp;&nbsp;<a href="mailto:l.lamprecht@bluewin.ch?subject=Giuseppina">l.lamprecht@bluewin.ch</a> (Lotte &amp; Edi), <br>
-	&nbsp;&nbsp;<a href="mailto:lorimar@bluewin.ch?subject=Giuseppina">lorimar@bluewin.ch</a> (Ruedi &amp; Christine).</li>
+	&nbsp;&nbsp;<a href="mailto:lorimar@bluewin.ch?subject=Giuseppina">lorimar@bluewin.ch</a> (Ruedi &amp; Christine)<br>
+	&nbsp;&nbsp;<a href="mailto:lorimar@bluewin.ch;l.lamprecht@bluewin.ch;ulrich.keller@unibas.ch;kellerhp@tele-net.ch?subject=Giuseppina"><b>Email an alle schicken</b></a></li>	
 	<li>Die Anzahl aller erfolgten Übernachtungen bitte im Nachhinein eintragen!</li>
 	<li>Bei &Auml;nderungen jede Zeile separat speichern! Wenn ihr mehrere Zeilen &auml;ndert und erst dann speichern dr&uuml;ckt, wird
 	nur die eine Zeile gespeichert und alle &uuml;brigen &Auml;nderungen gehen verloren.</li>
