@@ -2,6 +2,7 @@
 
 include "update.php";
 
+$jahr = $_GET['jahr'];
 ?>
 <html>
 	<head>
