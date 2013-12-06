@@ -3,33 +3,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-<title>Giusi Mietpreise</title>
-<meta http-equiv=Content-Language content=de>
-<style type="text/css">
-body {
-	background-color: #fff;
-	font-family: Arial;
-}
-
-table {
-	border: 0px;
-	border-collapse: collapse;
-}
-
-tr.grau td,td.grau {
-	background-color: #ccc;
-}
-
-td {
-	white-space: nowrap;
-	padding: 4px;
-}
-</style>
+	<title>Giusi Mietpreise</title>
+	<meta http-equiv=Content-Language content=de>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
-<body>
-<br/>
+<body class="largeFont">
 <h3>Mietpreise</h3>
-<table width="50%">
+<table width="50%" class="largeFont">
 	<tr class="grau">
 		<td><b>Familie Keller</b></td>
 		<td></td>

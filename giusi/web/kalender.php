@@ -94,12 +94,12 @@ function printKalender($result, $jahr, $saveButton, $action) {
 	$weekofyear = getWeekOfYear($jahr);
 
 	?>
-<h3>Belegungsplan für das Jahr <?php echo $jahr; ?></h3>
+<h2>Belegungsplan für das Jahr <?php echo $jahr; ?></h2>
 <b>(Jede Zeile gilt jeweils von Samsag bis Samstag)</b>
 <br/>
 <br/>
 <table width="5%">
-	<thead bgcolor="#CCCCCC">
+	<thead bgcolor="#FFF6D4">
 		<td nowrap class="bold">Woche</td>
 		<td nowrap class="bold">von - bis</td>
 		<td nowrap class="bold">berechtigt</td>

@@ -17,9 +17,9 @@ if (!isset($style)) {
 <head>
 	<title>Giusi Lageplan</title>
 	<meta http-equiv=Content-Language content=de>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
-<body bgcolor=#fff>
-
+<body>
 <div style="width:980px; font-family:Arial; font-size:12pt">
 	
 	<div style="float:left; width:300px">

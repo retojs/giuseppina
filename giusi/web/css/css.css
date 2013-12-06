@@ -1,14 +1,23 @@
-body,td,select,input {
+body {
 	font: 12px Arial, Helvetica, sans-serif;
+	background: #fff url('pattern-85om.png') repeat right top !important;
+	color: #3B332F;
 }
 
 table {
 	border: 0px;
+	font-size: 12px; border-collapse : collapse;
+	color: #000;
 	border-collapse: collapse;
 }
 
 td {
+	white-space: nowrap;
 	padding: 4px;
+}
+
+a,a:hover,a:visited {
+	color: #6E6354;
 }
 
 .bold {
@@ -16,11 +25,27 @@ td {
 }
 
 .rules {
-	color: #00b;
 	font-size: 13px;
-	line-height: 20px;
+	line-height: 24px;
+}
+
+.largeFont {
+	font-size: 18px;
+}
+
+.grau,.grau td {
+	background-color: #FFF6D4;
 }
 
 #menu {
+	font-size: 18px;
 	font-weight: bold;
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+#menu a:hover {
+	text-decoration: underline;
 }

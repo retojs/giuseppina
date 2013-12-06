@@ -15,19 +15,11 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-<title>Die Giuseppina - Webseite</title>
-<meta http-equiv=Content-Language content=de>
-<style type="text/css">
-body {
-    font-family: Arial;
-}
- 
-#menu {
-    font-weight: bold;
-}
-</style>
+	<title>Die Giuseppina - Webseite</title>
+	<meta http-equiv=Content-Language content=de>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
-<body bgcolor=#fff>
+<body>
  
 <h1>Die Giuseppina - Webseite</h1>
  

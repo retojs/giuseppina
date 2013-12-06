@@ -9,7 +9,7 @@ include "update.php";
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 	</head>
-	<body bgcolor="#fff">
+	<body>
 		
 		<?php printYear(2014, true, true, "giusi.php"); ?>
 	
