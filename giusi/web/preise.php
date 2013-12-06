@@ -27,9 +27,8 @@ td {
 </style>
 </head>
 <body>
-
+<br/>
 <h3>Mietpreise</h3>
-<p>&nbsp;</p>
 <table width="50%">
 	<tr class="grau">
 		<td><b>Familie Keller</b></td>
