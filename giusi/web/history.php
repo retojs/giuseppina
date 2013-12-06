@@ -10,7 +10,7 @@ $jahr = $_GET['jahr'];
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 	</head>
-	<body bgcolor="#ffff99" style="padding-top:0px">
+	<body bgcolor="#fff" style="padding-top:0px">
 		<a href="giusi.php">zurück</a> 
 		
 		<?php 

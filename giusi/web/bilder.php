@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <style type="text/css">
 body {
-	background-color: #ffff99;
+	background-color: #fff;
 	font-family: Arial;
 }
 </style>

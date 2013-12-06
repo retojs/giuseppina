@@ -9,28 +9,30 @@ include "update.php";
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 	</head>
-	<body bgcolor="#ffff99">
+	<body bgcolor="#fff">
 		
-		<?php printYear(2013, true, true, "giusi.php"); ?>
+		<?php printYear(2014, true, true, "giusi.php"); ?>
 	
 		<p>&nbsp;</p>
 		
-		<!-- vergangene und zukünftige Jahre -->
+		<!-- vergangene und zuk&uuml;nftige Jahre -->
 		<p>
 			<b>
-				<a href="history.php?jahr=2012">Belegungsplan für das Jahr 2012</a>
+				<a href="history.php?jahr=2013">Belegungsplan f&uuml;r das Jahr 2013</a>
 				<br><br>
-				<a href="history.php?jahr=2011">Belegungsplan für das Jahr 2011</a>
+				<a href="history.php?jahr=2012">Belegungsplan f&uuml;r das Jahr 2012</a>
 				<br><br>
-				<a href="history.php?jahr=2010">Belegungsplan für das Jahr 2010</a>
+				<a href="history.php?jahr=2011">Belegungsplan f&uuml;r das Jahr 2011</a>
 				<br><br>
-				<a href="history.php?jahr=2009">Belegungsplan für das Jahr 2009</a>
+				<a href="history.php?jahr=2010">Belegungsplan f&uuml;r das Jahr 2010</a>
 				<br><br>
-				<a href="history.php?jahr=2008">Belegungsplan für das Jahr 2008</a>
+				<a href="history.php?jahr=2009">Belegungsplan f&uuml;r das Jahr 2009</a>
 				<br><br>
-				<a href="history.php?jahr=2007">Belegungsplan für das Jahr 2007</a>
+				<a href="history.php?jahr=2008">Belegungsplan f&uuml;r das Jahr 2008</a>
 				<br><br>
-				<a href="history.php?jahr=2006">Belegungsplan für das Jahr 2006</a>
+				<a href="history.php?jahr=2007">Belegungsplan f&uuml;r das Jahr 2007</a>
+				<br><br>
+				<a href="history.php?jahr=2006">Belegungsplan f&uuml;r das Jahr 2006</a>
 				<br>
 			</b>
 		</p>

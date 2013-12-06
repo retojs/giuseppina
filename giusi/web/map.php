@@ -18,7 +18,7 @@ if (!isset($style)) {
 	<title>Giusi Lageplan</title>
 	<meta http-equiv=Content-Language content=de>
 </head>
-<body bgcolor=#ffff99>
+<body bgcolor=#fff>
 
 <div style="width:980px; font-family:Arial; font-size:12pt">
 	
@@ -80,10 +80,16 @@ if (!isset($style)) {
 		<div style="float:right; width:300px">
 			<p>&nbsp;</p>
 			<p>
-				Adresse: Moresio 7, 6646 Tenero-Contra/TI
+				Adresse: <br/>
+				<br/>
+				Moresio 7<br/>
+				6646 Tenero-Contra/TI</br/>
 			</p>
+			<br/>
 			<p>
-				Weg (Auto): von Tenero nach Contra fahren und beim Wegweiser &quot;La Fraccia&quot; geradeaus &uuml;ber die kleine Br&uuml;cke.	
+				Weg (Auto): <br/>
+				<br/>
+				von Tenero nach Contra fahren und beim Wegweiser &quot;La Fraccia&quot; geradeaus &uuml;ber die kleine Br&uuml;cke.	
 			</p>
 			<p>
 			<br/>

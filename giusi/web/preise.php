@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
@@ -5,7 +7,7 @@
 <meta http-equiv=Content-Language content=de>
 <style type="text/css">
 body {
-	background-color: #ff9;
+	background-color: #fff;
 	font-family: Arial;
 }
 
@@ -26,45 +28,34 @@ td {
 </head>
 <body>
 
-<h3>Mietpreise (für's ganze Haus, pro Übernachtung)</h3>
+<h3>Mietpreise</h3>
 <p>&nbsp;</p>
 <table width="50%">
 	<tr class="grau">
-		<td><b>Fremdvermietung</b></td>
+		<td><b>Familie Keller</b></td>
 		<td></td>
 		<td></td>
-		<td><b>CHF 80.-- / Tag</b></td>
+		<td><b>CHF 40.-- / Nacht</b></td>
 	</tr>
 	<tr>
 		<td colspan="4">&nbsp;</td>
 	</tr>
 	<tr class="grau">
-		<td><b>Familie</b></td>
+		<td><b>Freunde</b></td>
 		<td></td>
 		<td></td>
-		<td><b>CHF 40.-- / Tag</b></td>
+		<td><b>CHF 80.-- / Nacht</b></td>
 	</tr>
 	<tr>
 		<td colspan="4">&nbsp;</td>
 	</tr>
-<!-- 
-	<tr>
-		<td></td>
-		<td class="grau">Jugendliche</td>
-		<td class="grau">a) Erwerbstätige</td>
-		<td class="grau"><b>CHF 20.-- / Tag</b></td>
-	</tr>
-	<tr>
-		<td colspan="4">&nbsp;</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td class="grau">b) teilweise oder ganz Erwerbslose:</td>
-		<td class="grau"><b>CHF 10.-- / Tag</b></td>
-	</tr>
--->
 </table>
-
+<p>Bitte einzahlen auf Konto:</p>
+<p>
+Keller Rudolf<br/>
+Haus Giuseppina<br/>
+8400 Winterthur<br/>
+PC 90-763671-6<br/>
+</p>
 </body>
 </html>
