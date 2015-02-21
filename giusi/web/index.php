@@ -1,11 +1,11 @@
 <?php
 
-$menu_url = "http://www.paradox.ch/giusi/menu.php";
-$content_url = "http://www.paradox.ch/giusi/giusi.php";
+$menu_url = "menu.php";
+$content_url = "giusi.php";
 
 if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
-	$menu_url = "http://localhost/giusi/menu.php";
-	$content_url = "http://localhost/giusi/giusi.php";
+	$menu_url = "menu.php";
+	$content_url = "giusi.php";
 }
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">

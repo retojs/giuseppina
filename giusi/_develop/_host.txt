@@ -3,42 +3,34 @@ URL:
 
 
 Admin: 
-	http://login-1.hoststar.ch
+	http://login-2.hoststar.ch
 Benutzername: 
-	web119
+	web225
 Passwort: 
-	uranus
+	Hyp3rf!nder
 
 	
 FTP host:
-	ftp://login-1.hoststar.ch/html/giusi
+	ftp://login-2.hoststar.ch/html/giusi
 folder: 
 	/html/giusi
 login: 
-	web119
+	web225
 Password: 
-	uranus
+	Hyp3rf!nder
 
 
 MySQL DB (remote):
-	usr_web199_2
-user:
-	web119
+URL:
+	http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web225_2
+login:
+	web225
 password:
-	calopterix
-Admin:
-	http://login-1.hoststar.ch/phpMyAdmin/?db=usr_web119_2
+	svenska
 
 
 MySQL DB (lokal):
-!! Gibt's keine momentan !!
-	usr_web199_2
-user: 
-	web119
-password:
-	calopterix
-Admin:
-	http://login-1.hoststar.ch/phpMyAdmin/?db=usr_web119_2
+	Gibt's keine momentan
 
 
 

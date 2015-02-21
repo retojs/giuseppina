@@ -2,16 +2,16 @@
 
 // connect to DB
 function getDB() {
-	$user = "web119";
-	$pwd = "calopterix";
+	$user = "web225";
+	$pwd = "svenska";
 	if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
-		$user = "web119";
-		$pwd = "calopterix";
+		$user = "web225";
+		$pwd = "svenska";
 	}
 
-	$link = mysql_connect("localhost", "web119", "calopterix");
+	$link = mysql_connect("localhost", $user, $pwd);
 	if (!$link) die ("Couldnt connect to MySQL server");
-	mysql_select_db("usr_web119_2") or die ("Couldnt open database");
+	mysql_select_db("usr_web225_2") or die ("Couldnt open database");
 	return $link;
 }
 
@@ -117,7 +117,7 @@ function printKalender($result, $jahr, $saveButton, $action) {
 		}
 		?>
 		<tr>
-			<form method="post" action="http://www.paradox.ch/giusi/<?php echo $action ?>"><input type="hidden" name="jahr"
+			<form method="post" action="<?php echo $action ?>"><input type="hidden" name="jahr"
 				value="<?php print $jahr; ?>"> <input type="hidden" name="woche" value="<?php print $woche; ?>">
 			
 			
