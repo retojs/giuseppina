@@ -1,15 +1,15 @@
 <?php
  
-$menu_Belegungsplan = "http://www.paradox.ch/giusi/giusi.php";
-$menu_Mietpreise = "http://www.paradox.ch/giusi/preise.php";
-$menu_Adresse = "http://www.paradox.ch/giusi/map.php?zoom=2&style=Foto";
-$menu_Bilder = "http://www.paradox.ch/giusi/bilder.php";
+$menu_Belegungsplan = "giusi.php";
+$menu_Mietpreise = "preise.php";
+$menu_Adresse = "map.php?zoom=2&style=Foto";
+$menu_Bilder = "bilder.php";
  
 if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
-    // $menu_Belegungsplan = "http://www.paradox.ch/giusi/giusi.php";
-    $menu_Mietpreise = "http://localhost/giusi/preise.php";
-    $menu_Adresse = "http://localhost/giusi/map.php?zoom=2&style=Foto";
-    $menu_Bilder = "http://localhost/giusi/bilder.php";
+    // $menu_Belegungsplan = "giusi.php";
+    $menu_Mietpreise = "preise.php";
+    $menu_Adresse = "map.php?zoom=2&style=Foto";
+    $menu_Bilder = "bilder.php";
 }
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
