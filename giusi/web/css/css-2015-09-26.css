@@ -86,7 +86,6 @@ p {
 }
 
 #rules,#contact {
-	background-color: rgba(255, 255, 230, 0.3);
 	line-height: 24px;
 }
 
@@ -99,7 +98,7 @@ p {
 }
 
 #plan tbody {
-	background-color: rgb(243, 235, 183);
+	background-color: rgba(255, 253, 214, 0.6)
 }
 
 #plan thead td:first-child {
