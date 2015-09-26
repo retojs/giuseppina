@@ -1,28 +1,25 @@
 URL:
-	http://endo-diabasel.ch/private/Giusi.htm
+	http://hyperfinder.ch/giusi
 
 
-Admin: 
-	http://login-2.hoststar.ch
-Benutzername: 
-	web225
-Passwort: 
-	Hyp3rf!nder
+FTP
+===
 
-	
-FTP host:
-	ftp://login-2.hoststar.ch/html/giusi
-folder: 
-	/html/giusi
+In Windows Explorer open the URL:
+	ftp://login-2.hoststar.ch/html/hyperfinder/giusi/
+
 login: 
 	web225
 Password: 
 	Hyp3rf!nder
 
 
-MySQL DB (remote):
-URL:
+MySQL DB:
+========
+
+In a browser open the URL:
 	http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web225_2
+
 login:
 	web225
 password:
@@ -30,7 +27,7 @@ password:
 
 
 MySQL DB (lokal):
-	Gibt's keine momentan
+	none existing
 
 
 

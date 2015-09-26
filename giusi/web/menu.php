@@ -17,18 +17,29 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 <head>
 	<title>Die Giuseppina - Webseite</title>
 	<meta http-equiv=Content-Language content=de>
-	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/css-2015-09-26.css">
 </head>
 <body>
- 
-<h1>Die Giuseppina - Webseite</h1>
- 
+
 <div id="menu">
-<a href="<?php print $menu_Belegungsplan ?>" target="content">Belegungsplan</a>
+<h2>Die Giuseppina Webseite</h2>
+<a id="belegungsplan" class="selected-menu-item" href="<?php print $menu_Belegungsplan ?>" target="content" onClick="selectMenu('belegungsplan')">Belegungsplan</a>
 &nbsp;|&nbsp;
-<a href="<?php print $menu_Mietpreise ?>" target="content">Mietpreise</a>
+<a id="mietpreise" href="<?php print $menu_Mietpreise ?>" target="content" onClick="selectMenu('mietpreise')">Mietpreise</a>
 &nbsp;|&nbsp;
-<a href="<?php print $menu_Adresse ?>" target="content">Adresse</a>
+<a id="adresse" href="<?php print $menu_Adresse ?>" target="content" onClick="selectMenu('adresse')">Adresse</a>
 &nbsp;|&nbsp;
-<a href="<?php print $menu_Bilder ?>" target="content">Bilder</a>
+<a id="bilder" href="<?php print $menu_Bilder ?>" target="content" onClick="selectMenu('bilder')">Bilder</a>
 </div>
+
+<script type="text/javascript">
+
+var menuItemIds = ['belegungsplan', 'mietpreise', 'adresse', 'bilder'];
+
+function selectMenu(itemId) {
+	for (var i = 0; i < menuItemIds.length; i++) {
+		document.getElementById(menuItemIds[i]).className = '';		
+	}
+	document.getElementById(itemId).className = 'selected-menu-item';
+}
+</script>

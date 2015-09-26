@@ -5,18 +5,17 @@ include "update.php";
 ?>
 <html>
 	<head>
-		<title>Giusi Kalender</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-		<link rel="stylesheet" type="text/css" href="css/css.css">
+		<title>Giuseppina Website - Belegungsplan</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/css-2015-09-26.css">
 	</head>
 	<body>
 		
 		<?php printYear(2015, true, true, "giusi.php"); ?>
-	
-		<p>&nbsp;</p>
 		
 		<!-- vergangene und zuk&uuml;nftige Jahre -->
-		<p>
+		<div id="history">
 			<b>
 				<a href="history.php?jahr=2014">Belegungsplan f&uuml;r das Jahr 2014</a>
 				<br><br>
@@ -37,6 +36,6 @@ include "update.php";
 				<a href="history.php?jahr=2006">Belegungsplan f&uuml;r das Jahr 2006</a>
 				<br>
 			</b>
-		</p>
+		</div>
 	</body>
 </html>

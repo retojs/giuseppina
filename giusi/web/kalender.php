@@ -28,7 +28,6 @@ function getFirstSa($jahr) {
 	return $startSA;
 }
 
-
 // calculates current week of year
 function getWeekOfYear($jahr) {
 	$my_array = localtime(time(), 1);
@@ -62,24 +61,49 @@ function getWeekOfYear($jahr) {
 
 function printRules() {
 	?>
-<ul class="rules">
-	<li>Hanspi, Ueli, Lotte und Ruedi: tragt unten alle Eure Dispositionen (vermutliche und sichere) mit den Namen oder Initialen des
-	Schreibenden (z.B. HP) ein!</li>
-	<li>Alle definitiven Abmachungen in Perioden, die nicht Euch zugeteilt sind, müssen zusätzlich direkt zwischen den Geschwistern mit
-	Telefon/E-mails bestätigt werden. E-mail-Adressen: <br>
-	&nbsp;&nbsp;<a href="mailto:kellerhp@tele-net.ch?subject=Giuseppina">kellerhp@tele-net.ch</a> (HP &amp; Vrene), <br>
-	&nbsp;&nbsp;<a href="mailto:ulrich.keller@unibas.ch?subject=Giuseppina">ulrich.keller@unibas.ch</a> (Ueli &amp; Reta), <br>
-	&nbsp;&nbsp;<a href="mailto:l.lamprecht@bluewin.ch?subject=Giuseppina">l.lamprecht@bluewin.ch</a> (Lotte &amp; Edi), <br>
-	&nbsp;&nbsp;<a href="mailto:lorimar@bluewin.ch?subject=Giuseppina">lorimar@bluewin.ch</a> (Ruedi &amp; Christine)<br>
-	&nbsp;&nbsp;<a href="mailto:lorimar@bluewin.ch;l.lamprecht@bluewin.ch;ulrich.keller@unibas.ch;kellerhp@tele-net.ch?subject=Giuseppina"><b>Email an alle schicken</b></a></li>	
-	<li>Die Anzahl aller erfolgten Übernachtungen bitte im Nachhinein eintragen! (<a href="preise.php">Mietpreise und Konto</a>)</li>
-	<li>Bei &Auml;nderungen jede Zeile separat speichern! Wenn ihr mehrere Zeilen &auml;ndert und erst dann speichern dr&uuml;ckt, wird
-	nur die eine Zeile gespeichert und alle &uuml;brigen &Auml;nderungen gehen verloren.</li>
-	<li>F&uuml;r Kommentare und Fragen: Email an <a href="mailto:reto.lamprecht@gmx.ch?subject=Giuseppina">reto.lamprecht@gmx.ch</a>
-	schicken.</li>
-	<li><b>Kurtaxe: Alle Mieter bezahlen neu ihre Kurtaxe selber, füllen einen Melde-Schein aus und legen den Betrag in die Kasse auf
-	dem Schreibtisch. (Info und Kurtaxe / Nacht sind angegeben auf der Anleitung, die auf dem Schreibtisch liegt.) </b></li>
-</ul>
+<div id="rules">
+	<h3>Bedienungshinweise</h2>
+	<ul>
+		<li><b>Vor dem Aufenthalt</b> bitte die reservierten Tage in die Tabelle eintragen und speichern.<br/>
+		    Die Wochen kÃ¶nnen abgetauscht werden infolge mÃ¼ndlicher Vereinbarung mit dem WochenzustÃ¤ndigen (HP oder Lotta).</li>	
+		<li>Beim Eintragen von Reservationen bitte diese <b>Reihenfolge</b> einhalten:</b>
+			<ol>
+				<li>HP/Verena und Lotta/Edi</li>
+				<li>Keller- und Lamprecht-"Kinder"</li>
+				<li>Weitere FamilienangehÃ¶rige</li>
+				<li>Freunde, Bekannte</li>
+			</ol>
+		</li>
+		<li><b>Nach erfolgtem Aufenthalt</b> die Anzahl der Ãœbernachtungen bitte innerhalb von 2 Wochen hinten in die Tabelle eintragen und speichern.<br/>
+		Preise und Kontoinformationen findet ihr unter dem Menupunkt <a href="preise.php" target="content" onClick="window.parent.menu.selectMenu('mietpreise')"><b>Mietpreise</b></a></li>
+	</ul>
+</div>
+	<?php
+}
+
+function printContacts() {
+	?>
+<div id="contact">
+	<h3>Kontaktdaten</h3>
+	<blockquote>
+		Hanspeter und Verena Keller<br/>
+		SÃ¤ntisstrasse 18<br/>
+		8280 Kreuzlingen<br/>
+		071 672 33 52<br/>
+		<a href="mailto:kellerhp@tele-net.ch?subject=Giuseppina">kellerhp@tele-net.ch</a>
+	</blockquote>
+	<blockquote>
+		Lotte und Edi Lamprecht-Keller<br/>
+		BÃ¼elweg 7<br/>
+		8484 Weisslingen<br/>
+		052 384 18 01<br/>
+		<a href="mailto:l.lamprecht@bluewin.ch?subject=Giuseppina">l.lamprecht@bluewin.ch</a>
+	</blockquote>
+	<p>
+		FÃ¼r Kommentare und Fragen, bitte Email an: <a href="mailto:reto.lamprecht@gmx.ch?subject=Giusi Website">reto.lamprecht@gmx.ch</a>
+	</p>
+</div>
+<hr/>
 	<?php
 }
 
@@ -94,62 +118,62 @@ function printKalender($result, $jahr, $saveButton, $action) {
 	$weekofyear = getWeekOfYear($jahr);
 
 	?>
-<h2>Belegungsplan für das Jahr <?php echo $jahr; ?></h2>
-<b>(Jede Zeile gilt jeweils von Samsag bis Samstag)</b>
-<br/>
-<br/>
-<table width="5%">
-	<thead bgcolor="#FFF6D4">
-		<td nowrap class="bold">Woche</td>
-		<td nowrap class="bold">von - bis</td>
-		<td nowrap class="bold">berechtigt</td>
-		<td nowrap class="bold">Dispositionen</td>
-		<td colspan="2" nowrap class="bold">erfolgte Übernachtungen</td>
-	</thead>
-	<tbody>
-	<?php
-	while (list ($woche, $datum, $berechtigt, $text, $naechte) = mysql_fetch_row ($result)) {
-		$fontColorOpen = "";
-		$fontColorClose = "";
-		if ($woche < $weekofyear) {
-			$fontColorOpen = "<font color=#999999>";
-			$fontColorClose = "</font>";
-		}
-		?>
-		<tr>
-			<form method="post" action="<?php echo $action ?>"><input type="hidden" name="jahr"
-				value="<?php print $jahr; ?>"> <input type="hidden" name="woche" value="<?php print $woche; ?>">
-			
-			
-			<td nowrap class="bold"><?php print $fontColorOpen . $woche . $fontColorClose; ?></td>
-			<td nowrap class="bold"><?php print $fontColorOpen . $datum . $fontColorClose; ?></td>
-			<td nowrap class="bold"><?php print $fontColorOpen . $berechtigt . $fontColorClose; ?></td>
-			<td nowrap><input type="text" name="text" size="70" value="<?php print $text; ?>"></td>
-			<td nowrap><input type="text" size="12" name="naechte" value="<?php print $naechte; ?>"></td>
+	<div id="plan">
+		<h3>Belegungsplan fÃ¼r das Jahr <?php echo $jahr; ?></h2>
+		<b>(Jede Zeile gilt jeweils von Samsag bis Samstag)</b>
+		<br/>
+		<br/>
+		<table>
+			<thead>
+				<td>Woche</td>
+				<td>von - bis</td>
+				<td>berechtigt</td>
+				<td>Dispositionen</td>
+				<td>Ãœbernachtungen</td>
+			</thead>
+			<tbody>
 			<?php
-			if ($saveButton) {
+			while (list ($woche, $datum, $berechtigt, $text, $naechte) = mysql_fetch_row ($result)) {
+				$fontColorClass = '';
+				if ($woche < $weekofyear) {
+					$fontColorClass = 'passed-week';
+				} else if ($woche == $weekofyear) {
+					$fontColorClass = 'current-week';
+				}
 				?>
-			<td nowrap><input type="submit" name="Submit" value="speichern"></td>
+				<input type="hidden" name="jahr" value="<?php print $jahr; ?>">
+				<input type="hidden" name="woche" value="<?php print $woche; ?>">
+				<tr>
+					<td class="col-week <?php print $fontColorClass ?>"><?php print $woche ?></td>
+					<td class="col-date <?php print $fontColorClass ?>"><?php print $datum ?></td>
+					<td class="col-who <?php print $fontColorClass ?>"><?php print $berechtigt ?></td>
+					<td class="col-text"><input type="text" name="text" value="<?php print $text; ?>"></td>
+					<td class="col-nights"><input type="text" name="naechte" value="<?php print $naechte; ?>"></td>
+				</tr>
+				<?php
+			}
+			?>
+			</tbody>
+		</table>
+	<?php
+		if ($saveButton) {
+			?>
+			<button onClick="submitWeeks()">Speichern</button>
 			<?php
-}
-?>
-			</form>
-		</tr>
-		<?php
-}
-?>
-	</tbody>
-</table>
-
-<?php
+		}
+	?>
+	<br/>
+	<br/>
+	</div>
+	<?php
 }
 
 
-// Lädt alle Einträge für ein Jahr und zeigt sie an.
-// Falls $printRules = true, werden die Regeln auch geschrieben (siehe function printRules())
-function printYear($jahr, $printRules, $saveButton, $action) {
+// LÃ¤dt alle EintrÃ¤ge fÃ¼r ein Jahr und zeigt sie an.
+// Falls $printInfos = true, werden die Regeln auch geschrieben (siehe function printRules())
+function printYear($jahr, $printInfos, $saveButton, $action) {
 
-	if ($printRules) printRules();
+	if ($printInfos) printRules();
 
 	$link = getDB();
 	$result = mysql_query ("SELECT woche, datum, berechtigt, text, naechte FROM giusiwochen WHERE jahr='$jahr' ORDER BY woche", $link);
@@ -159,5 +183,51 @@ function printYear($jahr, $printRules, $saveButton, $action) {
 		printKalender($result, $jahr, $saveButton, $action);
 	}
 
+	if ($printInfos) printContacts();
+	
 }
 ?>
+
+<script type="text/javascript">
+function submitWeeks() {
+
+	var data = {'weeks' : []},
+		week = {};		
+
+	var inputFields = document.getElementsByTagName('input');
+	for (var i = 0; i < inputFields.length; i++) {
+		var inputField = inputFields[i];
+		var name = inputField.name;
+		var value = inputField.value;
+		if (name && name.trim().toLowerCase() !== 'submit') {
+			if (name.trim().toLowerCase() === 'jahr') {
+				week = {};
+				data.weeks.push(week);
+			}
+			week[name] = value;			
+		}
+	}
+
+	var json = JSON.stringify(data, null, 2);
+	
+	// construct an HTTP request
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'giusi.php', true);
+	xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+	
+	// send the collected data as JSON
+	xhr.send(json);
+	console.log('posted json:\n' + json);
+
+	xhr.onreadystatechange = function (oEvent) {  
+	    if (xhr.readyState === 4) {  
+	        if (xhr.status === 200) {  
+	        	alert("Die Ã„nderungen am Giusi-Belegungsplan wurden gespeichert.");
+	        } else {  
+	        	window.parent.content.location.href = 'giusi.php';  // reload the page
+	        	alert("Fehler: Ã„nderungen konnten nicht gespeichert werden.");
+	        }  
+	    }  
+	}; 
+}
+</script>

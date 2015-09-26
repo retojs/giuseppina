@@ -16,7 +16,7 @@ $link = getDB();
 
 // linien trennen
 $lines = explode(";", $plan);
-// linien einfügen
+// linien einfÃ¼gen
 foreach ($lines as $line) {
 	list ($woche, $datum, $berechtigt) = split(",", $line);
 	if ($woche != "") {
@@ -39,8 +39,8 @@ foreach ($lines as $line) {
 <html>
 <head>
 	<title>data-import</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
 	<script type="text/javascript">
 	
 function checkJahr() {

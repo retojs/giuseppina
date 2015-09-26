@@ -12,7 +12,8 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 <html>
 <head>
 <title>Giuseppina Website</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
 </head>
 
 <frameset rows="95,*" frameborder="NO" border="0" framespacing="0">

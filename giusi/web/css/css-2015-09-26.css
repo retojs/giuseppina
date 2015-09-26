@@ -1,0 +1,186 @@
+body {
+	font: 14px Arial, Helvetica, sans-serif;
+	background: #fff url('pattern-aqvf.png') repeat right top !important;
+	color: #3B332F;
+	margin: 0;
+}
+
+table {
+	border: 0px;
+	border-collapse: collapse;
+	color: #000;
+	border-collapse: collapse;
+}
+
+td {
+	white-space: nowrap;
+	padding: 6px 2px 2px 12px;
+	font-size: 12px;
+}
+
+a,a:hover,a:visited {
+	color: #6E6354;
+}
+
+button {
+	font-weight: bold;
+	margin-left: 272px;
+	width: 589px;
+	margin-top: 7px;
+	padding: 6px;
+}
+
+blockquote {
+	float: left;
+}
+
+p {
+	clear: both;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.largeFont,.largeFont td {
+	font-size: 16px;
+}
+
+.largeFont li {
+	line-height: 40px;
+}
+
+.grau,.grau td {
+	background-color: #FFF6D4;
+}
+
+.passed-week {
+	color: rgb(150, 137, 118);
+}
+
+.current-week {
+	color: rgb(86, 154, 133);
+}
+
+#menu {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 12px;
+}
+
+#menu h2 {
+	margin: 16px -1px;
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+#menu .selected-menu-item {
+	text-decoration: underline;
+	color: #000;
+}
+
+#rules,#contact {
+	background-color: rgba(255, 255, 230, 0.3);
+	line-height: 24px;
+}
+
+#rules,#plan,#contact,#history,#history-back {
+	padding: 6px 12px;
+}
+
+#plan thead {
+	background-color: rgb(255, 253, 214);
+}
+
+#plan tbody {
+	background-color: rgb(243, 235, 183);
+}
+
+#plan thead td:first-child {
+	border-top-left-radius: 8px;
+}
+
+#plan thead td:last-child {
+	border-top-right-radius: 8px;
+}
+
+#plan tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 8px;
+}
+
+#plan tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 8px;
+}
+
+#plan thead td {
+	padding: 10px 2px 6px 12px;
+}
+
+#plan td:first-child {
+	padding-left: 20px;
+}
+
+#plan tbody td:last-child {
+	padding-right: 20px;
+}
+
+#plan tbody tr:last-child td {
+	padding-bottom: 20px;
+}
+
+#plan input {
+	padding: 4px 9px;
+	border-radius: 3px;
+	border: 1px solid rgb(208, 194, 173);
+}
+
+#plan thead td,#plan td.col-week,#plan td.col-date,#plan td.col-who {
+	font-weight: bold;
+}
+
+#plan  td.col-week {
+	width: 40px;
+}
+
+#plan  td.col-date {
+	width: 100px;
+}
+
+#plan  td.col-who {
+	width: 70px;
+}
+
+#plan  td.col-text input {
+	width: 475px;
+}
+
+#plan  td.col-nights input {
+	width: 100px;
+}
+
+#preise {
+	padding: 6px 12px;
+}
+
+#location {
+	width: 980px;
+	padding: 6px 12px;
+	font-family: Arial;
+	font-size: 12pt
+}
+
+#google-map {
+	float: left;
+	width: 300px;
+}
+
+#location input {
+	margin: 4px 0;
+	padding: 3px;
+}
