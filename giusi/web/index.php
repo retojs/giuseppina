@@ -7,6 +7,11 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 	$menu_url = "menu.php";
 	$content_url = "giusi.php";
 }
+
+if (isset($_GET["jahr"])) {
+	$content_url = "history.php?jahr=" . $_GET["jahr"];
+}
+
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
 <html>
@@ -16,7 +21,7 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 <meta charset="UTF-8">
 </head>
 
-<frameset rows="95,*" frameborder="NO" border="0" framespacing="0">
+<frameset rows="100,*" frameborder="NO" border="0" framespacing="0">
 	<frame src="<?php print $menu_url; ?>" name="menu" scrolling="NO" noresize />
 	<frame src="<?php print $content_url; ?>" name="content" />
 </frameset>

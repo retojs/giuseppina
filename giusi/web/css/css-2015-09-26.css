@@ -1,8 +1,15 @@
 body {
 	font: 14px Arial, Helvetica, sans-serif;
-	background: #fff url('pattern-aqvf.png') repeat right top !important;
 	color: #3B332F;
 	margin: 0;
+}
+
+body:not(.body-menu) {
+	background: #fff url('pattern-aqvf.png') repeat right top !important;
+}
+
+.body-menu {
+	background-image: none;
 }
 
 table {
@@ -65,24 +72,28 @@ p {
 #menu {
 	font-size: 18px;
 	font-weight: bold;
-	margin: 12px;
+	padding: 12px;
+	background-color: rgba(250,250,220,1);
 }
 
 #menu h2 {
-	margin: 16px -1px;
+	margin: 10px 0 20px;
 }
 
 #menu a {
 	text-decoration: none;
+    color: #000;
+    background: #fff url('pattern-aqvf.png') repeat right top !important;
+	padding: 10px 20px;
+    border-radius: 6px;
 }
 
-#menu a:hover {
+#menu a:hover, #menu a.selected-menu-item {
 	text-decoration: underline;
 }
 
-#menu .selected-menu-item {
-	text-decoration: underline;
-	color: #000;
+#menu a:not(.selected-menu-item) {
+	opacity: 0.6;
 }
 
 #rules,#contact {

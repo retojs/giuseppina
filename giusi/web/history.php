@@ -19,7 +19,7 @@ $jahr = $_GET['jahr'];
 			$my_array = localtime(time(), 1);	
 			$year = $my_array["tm_year"];
 
-			printYear($jahr, false, $jahr > 1900 + $year, "history.php"); 
+			printYear($jahr, false, false, "history.php"); 
 		?>
 	
 	</body>

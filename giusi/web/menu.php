@@ -19,16 +19,13 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 	<meta http-equiv=Content-Language content=de>
 	<link rel="stylesheet" type="text/css" href="css/css-2015-09-26.css">
 </head>
-<body>
+<body class="body-menu">
 
 <div id="menu">
 <h2>Die Giuseppina Webseite</h2>
 <a id="belegungsplan" class="selected-menu-item" href="<?php print $menu_Belegungsplan ?>" target="content" onClick="selectMenu('belegungsplan')">Belegungsplan</a>
-&nbsp;|&nbsp;
 <a id="mietpreise" href="<?php print $menu_Mietpreise ?>" target="content" onClick="selectMenu('mietpreise')">Mietpreise</a>
-&nbsp;|&nbsp;
 <a id="adresse" href="<?php print $menu_Adresse ?>" target="content" onClick="selectMenu('adresse')">Adresse</a>
-&nbsp;|&nbsp;
 <a id="bilder" href="<?php print $menu_Bilder ?>" target="content" onClick="selectMenu('bilder')">Bilder</a>
 </div>
 

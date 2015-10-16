@@ -6,17 +6,19 @@
 
 // connect to DB
 function getDB() {
-	$link = mysql_connect("localhost", "web119", "calopterix");
-	if (!$link)
-		die("Couldnt connect to MySQL server");
-	mysql_select_db("usr_web119_2") or die("Couldnt open database");
+	$user = "web225";
+	$pwd = "svenska";
+	$link = mysql_connect("localhost", $user, $pwd);
+	if (!$link) die ("Couldnt connect to MySQL server");
+	mysql_select_db("usr_web225_2") or die ("Couldnt open database");
 	return $link;
 }
-$link = getDB();
 
-// linien trennen
+$link = getDB();
+mysql_query("SET autocommit=1");
+
+$plan =  $_POST["plan"];
 $lines = explode(";", $plan);
-// linien einfügen
 foreach ($lines as $line) {
 	list ($woche, $datum, $berechtigt) = split(",", $line);
 	if ($woche != "") {

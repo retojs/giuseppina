@@ -100,7 +100,7 @@ function printContacts() {
 		<a href="mailto:l.lamprecht@bluewin.ch?subject=Giuseppina">l.lamprecht@bluewin.ch</a>
 	</blockquote>
 	<p>
-		Für Kommentare und Fragen, bitte Email an: <a href="mailto:reto.lamprecht@gmx.ch?subject=Giusi Website">reto.lamprecht@gmx.ch</a>
+		Kommentare und Fragen bitte per Email an: <a href="mailto:reto.lamprecht@gmx.ch?subject=Giusi Website">reto.lamprecht@gmx.ch</a>
 	</p>
 </div>
 <hr/>
