@@ -147,8 +147,8 @@ function printKalender($result, $jahr, $saveButton, $action) {
 					<td class="col-week <?php print $fontColorClass ?>"><?php print $woche ?></td>
 					<td class="col-date <?php print $fontColorClass ?>"><?php print $datum ?></td>
 					<td class="col-who <?php print $fontColorClass ?>"><?php print $berechtigt ?></td>
-					<td class="col-text"><input type="text" name="text" value="<?php print $text; ?>"></td>
-					<td class="col-nights"><input type="text" name="naechte" value="<?php print $naechte; ?>"></td>
+					<td class="col-text <?php print $fontColorClass ?>"><input type="text" name="text" value="<?php print $text; ?>"></td>
+					<td class="col-nights <?php print $fontColorClass ?>"><input type="text" name="naechte" value="<?php print $naechte; ?>"></td>
 				</tr>
 				<?php
 			}

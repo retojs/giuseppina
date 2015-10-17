@@ -9,7 +9,8 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 }
 
 if (isset($_GET["jahr"])) {
-	$content_url = "history.php?jahr=" . $_GET["jahr"];
+	$queryString = http_build_query($_GET, '', '&');
+	$content_url = "history.php?" . $queryString;
 }
 
 ?>

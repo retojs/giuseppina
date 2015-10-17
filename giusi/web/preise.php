@@ -1,3 +1,4 @@
+<?php include "global.php" ?>
 <?php
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -5,7 +6,7 @@
 <head>
 	<title>Giusi - Mietpreise</title>
 	<meta http-equiv=Content-Language content=de>
-	<link rel="stylesheet" type="text/css" href="css/css-2015-09-26.css">
+	<link rel="stylesheet" type="text/css" href="<?php print $css_url; ?>">
 </head>
 <body class="largeFont">
 <div id="preise">

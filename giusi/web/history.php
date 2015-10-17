@@ -1,26 +1,23 @@
+<?php include "global.php" ?>
+<?php include "update.php" ?>
 <?php
-
-include "update.php";
-
-$jahr = $_GET['jahr'];
+	$jahr = $_GET['jahr'];
+	$edit = $_GET['edit'];
 ?>
 <html>
 	<head>
 		<title>Giusi Belegungskalender (<?php echo $jahr; ?>)</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/css-2015-09-26.css">
+		<link rel="stylesheet" type="text/css" href="<?php print $css_url; ?>">
 	</head>
 	<body>
-		<a id="history-back" href="giusi.php">zurück</a> 
+		<div id="history">
+			<a id="history-back" href="giusi.php">zurück</a> 
 		
-		<?php 
-			// make future editable
-			$my_array = localtime(time(), 1);	
-			$year = $my_array["tm_year"];
-
-			printYear($jahr, false, false, "history.php"); 
-		?>
-	
+			<?php 
+				printYear($jahr, false, $edit == 'true' ? true : false, "history.php");
+			?>
+		</div>	
 	</body>
 </html>

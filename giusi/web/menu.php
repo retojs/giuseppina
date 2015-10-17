@@ -1,3 +1,4 @@
+<?php include "global.php" ?>
 <?php
  
 $menu_Belegungsplan = "giusi.php";
@@ -17,7 +18,7 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 <head>
 	<title>Die Giuseppina - Webseite</title>
 	<meta http-equiv=Content-Language content=de>
-	<link rel="stylesheet" type="text/css" href="css/css-2015-09-26.css">
+	<link rel="stylesheet" type="text/css" href="css/css-2015-10-16.css">
 </head>
 <body class="body-menu">
 

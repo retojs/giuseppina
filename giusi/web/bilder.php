@@ -1,16 +1,17 @@
+<?php include "global.php" ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
 <html>
 <head>
 	<title>Giuseppina Website - Bilder</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/css-2015-09-26.css">
+	<link rel="stylesheet" type="text/css" href="<?php print $css_url; ?>">
 </head>
-<body class="largeFont">
+<body class="largeFont bilder">
 
 <center>
 
-<div>die neuen Sitzpolster</div>
+<h4>die neuen Sitzpolster</h4>
 <br />
 
 <img src="bilder/neue_sitzpolster.jpg" /><br />

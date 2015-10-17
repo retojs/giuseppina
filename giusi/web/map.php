@@ -1,3 +1,4 @@
+<?php include "global.php" ?>
 <?php
 
 // defaults
@@ -17,7 +18,7 @@ if (!isset($style)) {
 <head>
 	<title>Giusi Lageplan</title>
 	<meta http-equiv=Content-Language content=de>
-	<link rel="stylesheet" type="text/css" href="css/css-2015-09-26.css">
+	<link rel="stylesheet" type="text/css" href="<?php print $css_url; ?>">
 </head>
 <body>
 <div id="location">
