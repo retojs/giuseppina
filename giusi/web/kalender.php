@@ -54,7 +54,12 @@ function getWeekOfYear($jahr) {
 
 	// 5. divide by 7
 	$weekofyear = floor(($daysPassed / 7) + 1);
-
+	
+	// 6. switch to new week on saturday
+	if ($daysPassed / 7 == floor($daysPassed / 7)) {
+		$weekofyear += 1;
+	}
+		
 	return $weekofyear;
 }
 
