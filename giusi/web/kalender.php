@@ -38,13 +38,13 @@ function getWeekOfYear($jahr) {
 	if ($jahr > (1900 + $year)) {
 		return -1;
 	} else if ($jahr < (1900 + $year)) {
-		return 99;
+		return 999;
 	}
 
 	$startSA = getFirstSa($jahr);
-
-	// 3. get current day of year
-	$dayofyear = $my_array["tm_yday"];
+	
+	// 3. get current day of year, starting with 1
+	$dayofyear = $my_array["tm_yday"] + 1;
 
 	// 4. calc days passed from first SA till now
 	$daysPassed = $dayofyear - $startSA;
@@ -52,13 +52,8 @@ function getWeekOfYear($jahr) {
 		$daysPassed = 0;
 	}
 
-	// 5. divide by 7
-	$weekofyear = floor(($daysPassed / 7) + 1);
-	
-	// 6. switch to new week on saturday
-	if ($daysPassed / 7 == floor($daysPassed / 7)) {
-		$weekofyear += 1;
-	}
+	// 5. divide by 7, add 1 since first SA started week 2, take ceil since we're interested in the ongoing (not finished) week
+	$weekofyear = ceil($daysPassed / 7 ) + 1;
 		
 	return $weekofyear;
 }
