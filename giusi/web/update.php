@@ -40,7 +40,7 @@ if (isset($newJahr) && isset($oldJahr)) {
 	}
 
 	$to = "reto.lamprecht@gmx.ch";
-	$subject = iconv("UTF-8", "ISO-8859-1", "Giusi Kalender wurde geändert");
+	$subject = iconv("UTF-8", "ISO-8859-1", "Giusi Kalender wurde geaendert");
 	$headers = "From: giusi@hyperfinder.ch\r\n";
 	
 	mail($to, $subject, iconv("UTF-8", "ISO-8859-1", $diff), $headers);

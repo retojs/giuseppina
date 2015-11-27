@@ -3,6 +3,9 @@
 <?php
 	$jahr = $_GET['jahr'];
 	$edit = $_GET['edit'];
+	
+	$localtime = localtime(time(), 1);
+	$currentYear = 1900 + $localtime["tm_year"];
 ?>
 <html>
 	<head>
@@ -16,7 +19,7 @@
 			<a id="history-back" href="giusi.php">zurück</a> 
 		
 			<?php 
-				printYear($jahr, false, $edit == 'true' ? true : false, "history.php");
+				printYear($jahr, false, $edit == 'true' || $jahr >= $currentYear ? true : false, "history.php");
 			?>
 		</div>	
 	</body>
