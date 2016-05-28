@@ -53,7 +53,7 @@ function getWeekOfYear($jahr) {
 	}
 
 	// 5. divide by 7, add 1 since first SA started week 2, take ceil since we're interested in the ongoing (not finished) week
-	$weekofyear = ceil($daysPassed / 7 ) + 1;
+	$weekofyear = ceil($daysPassed / 7 );
 		
 	return $weekofyear;
 }
