@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Giusi Calendar</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="lib/moment.min.js"></script>
+</head>
+
+<body>
+<p>
+    Go to <a href="http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web225_2" target="_blank">http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web225_2</a>
+    to backup database first in sweden!
+</p>
+
+<p>
+    Belegungsplan Format:
+<p style="margin-left:20px">
+    <i><strong>Woche, Datum, berechtigt ;</strong></i>
+</p>
+also z.B.:
+<p style="margin-left:20px">
+    <strong>15, 12.5. - 19.5., Ueli ;</strong>
+</p>
+</p>
+
+<form id="updateForm" method="post" action="initjahr.php"
+      style="border-top: dotted 1px grey; padding-top:20px">
+
+    <p> Jahr:
+        <input type="text" name="jahr" id="year" style="width:50px">
+        <input type="button" value="Create Calendar" id="createButton"></input>
+    </p>
+    <p>
+        <textarea rows="20" cols="30" name="plan" id="plan"></textarea>
+    </p>
+    <p>
+        <button form="updateForm" onclick="checkYear()">Speichern</button>
+    </p>
+</form>
+
+<script>
+
+    var START_WITH_WEEK = 12,
+            NOF_WEEKS = 32,
+            firstWeekdays = [6, 7, 1, 2, 4, 5, 6, 7, 2, 3, 4, 5, 7, 1, 2, 3, 5, 6, 7, 1],  //first weekday for next 20 years, starting from 2005. (1=mo, 2=di .. 6=sa, 7=so)
+            names = ['Hanspi', 'Ueli', 'Lotte', 'Ruedi'];
+
+    function getCalendar(year) {
+
+        var nameOffset = (year - 2005) % 4,
+                firstWeekday = firstWeekdays[year - 2005],
+                date = moment(year + '0101', 'YYYYMMDD'),
+                startOffset = firstWeekday < 6
+                        ? 6 - firstWeekday + 7 * START_WITH_WEEK
+                        : 7 * START_WITH_WEEK - (firstWeekday - 6);
+
+        date.add(startOffset, 'days');
+
+        var calendar = '';
+        for (var i = 0; i < NOF_WEEKS; i++) {
+            var von = date.format('DD.MM');
+            date.add(7, 'days');
+            var bis = date.format('DD.MM');
+            calendar += (i > 0 ? '\n' : '')
+                    + (START_WITH_WEEK + i) + ', ' + von + ' - ' + bis + ', ' + names[(nameOffset + i) % 4] + ';';
+        }
+        return calendar
+    }
+
+    function checkYear() {
+        if ($('#year').value == '') {
+            alert("Jahr ist leer!");
+            return false;
+        } else {
+            $('#updateForm').submit();
+        }
+    }
+
+    $('#year').val(1901 + new Date().getYear());
+    $('#createButton').on('click', function () {
+        var calendar = getCalendar($('#year').val());
+        $('#plan').val(calendar);
+    });
+
+</script>
+
+</body>
+</html>
