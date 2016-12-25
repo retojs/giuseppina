@@ -17,7 +17,7 @@ function printHistory() {
 		<title>Giuseppina Website - Belegungsplan</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/css-2015-10-16.css">
+		<link rel="stylesheet" type="text/css" href="css/css-2016-12-25.css">
 	</head>
 	<body>
 		
@@ -25,8 +25,11 @@ function printHistory() {
 		
 		<!-- vergangene und zuk&uuml;nftige Jahre -->
 		<div id="history">
-			<b>
-				<?php printHistory() ?>
+		    <b>
+		        <p>
+		            <a href="history.php?jahr=2017">*** Neuer Belegungsplan für 2017 ***</a>
+		        </p>
+			    <?php printHistory() ?>
 			</b>
 		</div>
 	</body>

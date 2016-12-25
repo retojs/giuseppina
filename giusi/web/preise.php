@@ -16,10 +16,10 @@
 	</p>
 	<table width="50%" class="largeFont">
 		<tr class="grau">
-			<td><b>Keller- und Lamprecht-"Kinder"</b></td>
+			<td><b>Keller- und Lamprecht-Kinder</b></td>
 			<td></td>
 			<td></td>
-			<td><b>CHF 30.-</b></td>
+			<td><b>CHF 20.-</b></td>
 		</tr>
 		<tr>
 			<td colspan="4">&nbsp;</td>
@@ -28,13 +28,25 @@
 			<td><b>Geschwister Keller, Nichten, Neffen</b></td>
 			<td></td>
 			<td></td>
-			<td><b>CHF 60.-</b></td>
+			<td></td>
 		</tr>
+        <tr class="grau">
+                <td><ul><li><b>Verdienende</b></li></ul></td>
+                <td></td>
+                <td></td>
+                <td><b>CHF 40.-</b></td>
+        </tr>
+        <tr class="grau">
+                <td><ul><li><b>Nichtverdienende</b></li></ul></td>
+                <td></td>
+                <td></td>
+                <td><b>CHF 60.-</b></td>
+        </tr>
 		<tr>
 			<td colspan="4">&nbsp;</td>
 		</tr>
 		<tr class="grau">
-			<td><b>Bekannte</b></td>
+			<td><b>Fremdvermietung</b></td>
 			<td></td>
 			<td></td>
 			<td><b>CHF 80.-</b></td>
@@ -46,7 +58,7 @@
 	
 	<h3>Bezahlung</h3>
 	
-	<ul>
+	<ul class="pay">
 		<li>Einzahlungsscheine liegen beim Schreibtisch in der Giuseppina auf.</li>
 		<li>Einzahlung bitte innerhalb von 2 Wochen nach den Ferien</li>
 		<li>Kurtaxe entfällt (Ersatz ist eine Kurtaxenpauschale für Ferienhausbesitzer)</li>

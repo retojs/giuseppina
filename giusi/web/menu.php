@@ -18,7 +18,7 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 <head>
 	<title>Die Giuseppina - Webseite</title>
 	<meta http-equiv=Content-Language content=de>
-	<link rel="stylesheet" type="text/css" href="css/css-2015-10-16.css">
+	<link rel="stylesheet" type="text/css" href="css/css-2016-12-25.css">
 </head>
 <body class="body-menu">
 

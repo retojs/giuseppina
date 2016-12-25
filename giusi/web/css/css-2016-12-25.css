@@ -53,10 +53,6 @@ p {
     font-size: 16px;
 }
 
-.largeFont li {
-    line-height: 40px;
-}
-
 .grau, .grau td {
     background-color: #FFF6D4;
 }
@@ -203,6 +199,14 @@ p {
 
 #preise {
     padding: 6px 12px;
+}
+
+#preise ul {
+    margin-bottom: 0;
+}
+
+#preise ul.pay {
+    line-height: 40px;
 }
 
 #location {
