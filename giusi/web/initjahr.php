@@ -20,6 +20,15 @@ $link = getDB();
 mysql_query("SET autocommit=1");
 
 $jahr =  $_POST["jahr"];
+
+$result = mysql_query ("DELETE FROM giusiwochen WHERE jahr='$jahr'", $link);
+if (!$result) {
+    print mysql_error();
+} else {
+    $affectedRowCount = mysql_affected_rows ($link);
+    print "<br> --- OK! $affectedRowCount Wochen im Jahr $jahr gelöscht";
+}
+
 $plan =  $_POST["plan"];
 $lines = explode(";", $plan);
 foreach ($lines as $line) {

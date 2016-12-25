@@ -40,34 +40,13 @@ also z.B.:
     </p>
 </form>
 
+<script src="createCalendar.js"></script>
 <script>
-
-    var START_WITH_WEEK = 12,
-            NOF_WEEKS = 32,
-            firstWeekdays = [6, 7, 1, 2, 4, 5, 6, 7, 2, 3, 4, 5, 7, 1, 2, 3, 5, 6, 7, 1],  //first weekday for next 20 years, starting from 2005. (1=mo, 2=di .. 6=sa, 7=so)
-            names = ['Hanspi', 'Ueli', 'Lotte', 'Ruedi'];
-
-    function getCalendar(year) {
-
-        var nameOffset = (year - 2005) % 4,
-                firstWeekday = firstWeekdays[year - 2005],
-                date = moment(year + '0101', 'YYYYMMDD'),
-                startOffset = firstWeekday < 6
-                        ? 6 - firstWeekday + 7 * START_WITH_WEEK
-                        : 7 * START_WITH_WEEK - (firstWeekday - 6);
-
-        date.add(startOffset, 'days');
-
-        var calendar = '';
-        for (var i = 0; i < NOF_WEEKS; i++) {
-            var von = date.format('DD.MM');
-            date.add(7, 'days');
-            var bis = date.format('DD.MM');
-            calendar += (i > 0 ? '\n' : '')
-                    + (START_WITH_WEEK + i) + ', ' + von + ' - ' + bis + ', ' + names[(nameOffset + i) % 4] + ';';
-        }
-        return calendar
-    }
+    $('#year').val(1901 + new Date().getYear());
+    $('#createButton').on('click', function () {
+        var calendar = getCalendar($('#year').val());
+        $('#plan').val(calendar);
+    });
 
     function checkYear() {
         if ($('#year').value == '') {
@@ -77,13 +56,6 @@ also z.B.:
             $('#updateForm').submit();
         }
     }
-
-    $('#year').val(1901 + new Date().getYear());
-    $('#createButton').on('click', function () {
-        var calendar = getCalendar($('#year').val());
-        $('#plan').val(calendar);
-    });
-
 </script>
 
 </body>
