@@ -31,16 +31,16 @@
 			<td></td>
 		</tr>
         <tr class="grau">
-                <td><ul><li><b>Verdienende</b></li></ul></td>
-                <td></td>
-                <td></td>
-                <td><b>CHF 40.-</b></td>
+            <td><ul><li><b>Nichtverdienende</b></li></ul></td>
+            <td></td>
+            <td></td>
+            <td><b>CHF 40.-</b></td>
         </tr>
-        <tr class="grau">
-                <td><ul><li><b>Nichtverdienende</b></li></ul></td>
-                <td></td>
-                <td></td>
-                <td><b>CHF 60.-</b></td>
+		<tr class="grau">
+            <td><ul><li><b>Verdienende</b></li></ul></td>
+            <td></td>
+            <td></td>
+            <td><b>CHF 60.-</b></td>
         </tr>
 		<tr>
 			<td colspan="4">&nbsp;</td>

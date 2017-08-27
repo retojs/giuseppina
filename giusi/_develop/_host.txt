@@ -12,6 +12,8 @@ login:
 	web225
 Password: 
 	Hyp3rf!nder
+	
+(!) Musste vorher "anonym anmelden" wählen, damit der Login funktionierte...
 
 
 MySQL DB:
