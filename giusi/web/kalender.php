@@ -2,16 +2,16 @@
 
 // connect to DB
 function getDB() {
-	$user = "web225";
-	$pwd = "svenska";
+	$user = "web119";
+	$pwd = "calopterix";
 	if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
-		$user = "web225";
-		$pwd = "svenska";
+		$user = "web119";
+		$pwd = "calopterix";
 	}
 
 	$link = mysql_connect("localhost", $user, $pwd);
 	if (!$link) die ("Couldnt connect to MySQL server");
-	mysql_select_db("usr_web225_2") or die ("Couldnt open database");
+	mysql_select_db("usr_web119_2") or die ("Couldnt open database");
 	return $link;
 }
 

@@ -9,9 +9,9 @@ In Windows Explorer open the URL:
 	ftp://login-2.hoststar.ch/html/hyperfinder/giusi/
 
 login: 
-	web225
+	web119f3
 Password: 
-	Hyp3rf!nder
+	Hyp3r+finder
 	
 (!) Musste vorher "anonym anmelden" wählen, damit der Login funktionierte...
 
@@ -20,12 +20,12 @@ MySQL DB:
 ========
 
 In a browser open the URL:
-	http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web225_2
+	http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web119_2
 
 login:
-	web225
+	web119
 password:
-	svenska
+	calopterix
 
 
 MySQL DB (lokal):
