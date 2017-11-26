@@ -1,4 +1,4 @@
-var NAMES = ['HP', 'Lotta'],
+﻿var NAMES = ['HP', 'Lotta'],
     NAMES_COUNT = NAMES.length,
     START_WITH_NAME = "HP",
     START_WITH_NAME_INDEX = NAMES.indexOf(START_WITH_NAME),

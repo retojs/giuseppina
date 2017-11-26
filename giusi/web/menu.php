@@ -21,7 +21,6 @@ if (strtolower($_SERVER["HTTP_HOST"]) == 'localhost') {
 	<link rel="stylesheet" type="text/css" href="css/css-2016-12-25.css">
 </head>
 <body class="body-menu">
-
 <div id="menu">
 <h2>Die Giuseppina Webseite</h2>
 <a id="belegungsplan" class="selected-menu-item" href="<?php print $menu_Belegungsplan ?>" target="content" onClick="selectMenu('belegungsplan')">Belegungsplan</a>

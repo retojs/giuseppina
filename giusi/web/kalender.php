@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 // connect to DB
 function getDB() {

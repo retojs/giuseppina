@@ -1,4 +1,4 @@
-<?php include "global.php" ?>
+﻿<?php include "global.php" ?>
 <?php
 
 // defaults

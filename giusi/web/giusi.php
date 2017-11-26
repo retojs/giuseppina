@@ -1,9 +1,9 @@
-<?php include "global.php" ?>
+﻿<?php include "global.php" ?>
 <?php include "update.php" ?>
 <?php 
 function printHistory() {
 	$jahrFirst = 2006;
-	$jahrLast = 2016;
+	$jahrLast = 2017;
 	for ($jahr = $jahrLast; $jahr >= $jahrFirst; $jahr--) {
 		?>
 		<a href="history.php?jahr=<?php print $jahr ?>">Belegungsplan f&uuml;r das Jahr <?php print $jahr ?></a>
@@ -21,7 +21,7 @@ function printHistory() {
 	</head>
 	<body>
 		
-		<?php printYear(2017, true, true, "giusi.php"); ?>
+		<?php printYear(2018, true, true, "giusi.php"); ?>
 		
 		<!-- vergangene und zuk&uuml;nftige Jahre -->
 		<div id="history">

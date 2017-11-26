@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 $menu_url = "menu.php";
 $content_url = "giusi.php";

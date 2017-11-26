@@ -1,4 +1,4 @@
-<?php include "global.php" ?>
+﻿<?php include "global.php" ?>
 <?php
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -16,7 +16,7 @@
 	</p>
 	<table width="50%" class="largeFont">
 		<tr class="grau">
-			<td><b>Keller- und Lamprecht-Kinder</b></td>
+			<td><b>Direkte Keller und Lamprecht Nachkommen:</b></td>
 			<td></td>
 			<td></td>
 			<td><b>CHF 20.-</b></td>
@@ -25,28 +25,16 @@
 			<td colspan="4">&nbsp;</td>
 		</tr>
 		<tr class="grau">
-			<td><b>Geschwister Keller, Nichten, Neffen</b></td>
+			<td><b>Nichten und Neffen:</b></td>
 			<td></td>
 			<td></td>
-			<td></td>
-		</tr>
-        <tr class="grau">
-            <td><ul><li><b>Nichtverdienende</b></li></ul></td>
-            <td></td>
-            <td></td>
-            <td><b>CHF 40.-</b></td>
-        </tr>
-		<tr class="grau">
-            <td><ul><li><b>Verdienende</b></li></ul></td>
-            <td></td>
-            <td></td>
-            <td><b>CHF 60.-</b></td>
+            <td><b>CHF 30.-</b></td>
         </tr>
 		<tr>
 			<td colspan="4">&nbsp;</td>
 		</tr>
 		<tr class="grau">
-			<td><b>Fremdvermietung</b></td>
+			<td><b>Nicht verwandte Gäste</b></td>
 			<td></td>
 			<td></td>
 			<td><b>CHF 80.-</b></td>

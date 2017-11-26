@@ -1,4 +1,4 @@
-<?php include "global.php" ?>
+﻿<?php include "global.php" ?>
 <?php include "update.php" ?>
 <?php
 	$jahr = $_GET['jahr'];
@@ -21,6 +21,11 @@
 			<?php 
 				printYear($jahr, false, $edit == 'true' || $jahr >= $currentYear ? true : false, "history.php");
 			?>
-		</div>	
+		</div>
+		<div style="text-align:right;opacity:0">
+            <a href="https://login-1.hoststar.ch/phpMyAdmin/?db=usr_web119_2" target="_blank">web119_2</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.paradox.ch/giusi/createCalendar.html" target="_blank">...</a>
+        </div>
 	</body>
 </html>
