@@ -1,12 +1,16 @@
 URL:
 	http://hyperfinder.ch/giusi
 
+	
+Relevant sind die Passwörter in KeePass
+	
+====
 
 FTP
 ===
 
 In Windows Explorer open the URL:
-	ftp://login-2.hoststar.ch/html/hyperfinder/giusi/
+	ftp://login-1.hoststar.ch
 
 login: 
 	web119f3
@@ -20,17 +24,15 @@ MySQL DB:
 ========
 
 In a browser open the URL:
-	http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web119_2
-
+	https://login-1.hoststar.ch/phpMyAdmin
+	
 login:
 	web119
 password:
 	calopterix
 
-
-MySQL DB (lokal):
-	none existing
-
+MySQL DB:
+	usr_web119_2 (giusiwochen)
 
 
 
