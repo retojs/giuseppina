@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Giusi Calendar</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="3dparty/moment.min.js"></script>
+</head>
+
+<body>
+<p>
+    Zuerst DB backup ausführen: <a href="http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web119_2" target="_blank">http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web119_2</a>
+</p>
+
+<p>
+    Belegungsplan Format:
+<p style="margin-left:20px">
+    <i><strong>Woche, Datum, berechtigt ;</strong></i>
+</p>
+also z.B.:
+<p style="margin-left:20px">
+    <strong>15, 12.5. - 19.5., Ueli ;</strong>
+</p>
+</p>
+
+<form id="updateForm" method="post" action="initjahr.php"
+      style="border-top: dotted 1px grey; padding-top:20px">
+
+    <p> Jahr:
+        <input type="text" name="jahr" id="year" style="width:50px">
+        <input type="button" value="Create Calendar" id="createButton"></input>
+        (Speichert noch nichts in der DB.)
+    </p>
+    <p>
+        <textarea rows="20" cols="30" name="plan" id="plan"></textarea>
+    </p>
+    <p>
+        <button form="updateForm" onclick="checkYear()">Speichern</button>
+        (Speichert die Wochen in der DB.)
+    </p>
+    <p>
+        Danach die Jahreszahlen in giusi.php anpassen und die Datei per FTP hochladen (Username/Passwort siehe _host.txt) 
+    </p>
+</form>
+
+<script src="createCalendar.js"></script>
+<script>
+    $('#year').val(1901 + new Date().getYear());
+    $('#createButton').on('click', function () {
+        var calendar = getCalendar($('#year').val());
+        $('#plan').val(calendar);
+    });
+
+    function checkYear() {
+        if ($('#year').value == '') {
+            alert("Jahr ist leer!");
+            return false;
+        } else {
+            $('#updateForm').submit();
+        }
+    }
+</script>
+
+</body>
+</html>

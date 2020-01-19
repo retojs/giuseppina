@@ -1,0 +1,55 @@
+
+Go to http://www.paradox.ch/giusi/createCalendar.html
+
+Datenbank Zugriff
+
+--- old school (1)
+
+Data-Import geht so: (siehe auch README.txt, Punkt A)
+
+0. Mach zur Sicherheit erst mal einen Datenbank dump! (Siehe Punkt E!)
+
+2. Generiere SQL INSERT statements mit ch.hyperraum.giusi.CalenderGenerator.java
+
+1. Öffne http://login-2.hoststar.ch/phpMyAdmin/?db=usr_web225_2
+
+3. Führe INSERT statements aus
+
+
+--- old school (2)
+
+1. Öffne in einem Browser die URL 
+   giusi/initjahr.php
+
+   Source-code der Seite: initjahr.php
+
+2. Gib dort das gewünschte Jahr sowie den korrekt formatierten Jahresplan ein! 
+   Beispiel: 
+    15,07.4. - 14.4.,Ruedi;
+    16,14.4. - 21.4.,Ruedi;
+    17,21.4. - 28.4.,Hanspi;
+    18,28.4. - 05.5.,Hanspi;
+    ...
+   siehe auch z.B.:
+    data-import/2006.txt
+
+3. Eingabe prüfen (Punkt D) und z.B.
+   SELECT * FROM `giusiwochen` WHERE jahr=2007
+   
+4. Solange der alte Plan noch aktuell ist, kannst du den neuen in giusi.php verlinken mit (Bsp. für 2007):
+   <a href="history.php?jahr=2007">Belegungsplan für das Jahr 2007</a>
+				
+
+Trouble-Shooting: 
+
+Q: Kann nicht zur DB verbinden.
+A: Das Passwort mag sich geändert haben. Kopiere die Funktion getDB() aus kalender.php!
+
+Q: Hab vergessen, das Jahr zu setzen...
+A: Dann lösche alle Einträge mit Jahr=null von Hand, über den PhpMyAdmin!
+   SQL: 
+     DELETE from giusiwochen WHERE jahr=0
+
+Q: Es wird nur eine Woche gesetzt, obwohl ich alle eingegeben habe
+A: Wetten du hast das Semikolon (;) am Ende jeder Zeile vergessen?
+

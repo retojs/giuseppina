@@ -1,0 +1,38 @@
+URL:
+	http://hyperfinder.ch/giusi
+
+	
+Relevant sind die Passwörter in KeePass
+	
+====
+
+FTP
+===
+
+In Windows Explorer open the URL:
+	ftp://login-1.hoststar.ch
+
+login: 
+	web119f3
+Password: 
+	Hyp3r+finder
+	
+(!) Musste vorher "anonym anmelden" wählen, damit der Login funktionierte...
+
+
+MySQL DB:
+========
+
+In a browser open the URL:
+	https://login-1.hoststar.ch/phpMyAdmin
+	
+login:
+	web119
+password:
+	calopterix
+
+MySQL DB:
+	usr_web119_2 (giusiwochen)
+
+
+

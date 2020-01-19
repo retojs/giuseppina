@@ -1,0 +1,17 @@
+Lieber Ueli, 
+
+Ich hatte gerade eine freie Minute (etwas mehr...) und einen Webserver mit Datenbank, da habe ich den Belegungsplan der Giuseppina-Website neu programmiert:
+
+http://www.paradox.ch/giusi/Giusi.htm
+
+So sieht man besser, welche Wochen noch frei sind. 
+Ausserdem sind die Mietpreise und die Fotos auf separaten Seiten untergebracht.
+
+Ich hoffe du bist mit dieser neuen Version einverstanden.
+
+Zum Technischen: Der neue Belegungsplan läuft auf einer domain von einem Freund von mir (paradox.ch). Wenn du das File Giusi.htm auf deinem Webserver ersetzt durch das, das ich dir mitschicke, dann müsste er unter der alten URL erreichbar sein und alle können ihre bookmarks so lassen wie sie sind. 
+
+Wenn du gerade dabei bist, könntest du ev. auch die Hintergrundfarbe der Foto-Seite (fotosGiusi.htm) auf gelb umstellen, um die Seite perfekt zu machen. ;-)
+
+
+Gruss, Reto
