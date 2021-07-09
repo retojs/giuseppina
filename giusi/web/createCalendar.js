@@ -2,7 +2,7 @@
     NAMES_COUNT = NAMES.length,
     START_WITH_NAME = "HP",
     START_WITH_NAME_INDEX = NAMES.indexOf(START_WITH_NAME),
-    START_WITH_WEEK = 14,
+    START_WITH_WEEK = 15,
     NOF_WEEKS = 30,
     WEEKS_PER_NAME = 2,
     FIRST_WEEKDAYS = [6, 7, 1, 2, 4, 5, 6, 7, 2, 3, 4, 5, 7, 1, 2, 3, 5, 6, 7, 1]; //first weekday for next 20 years, starting from 2005. (1=mo, 2=di .. 6=sa, 7=so)

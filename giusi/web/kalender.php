@@ -87,7 +87,7 @@ function printContacts() {
 	<h3>Kontaktdaten</h3>
 	<blockquote>
 		Hanspeter und Verena Keller<br/>
-		Säntisstrasse 18<br/>
+		Besmerweg 12 c<br/>
 		8280 Kreuzlingen<br/>
 		071 672 33 52<br/>
 		<a href="mailto:kellerhp@tele-net.ch?subject=Giuseppina">kellerhp@tele-net.ch</a>

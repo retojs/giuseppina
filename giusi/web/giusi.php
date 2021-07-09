@@ -3,7 +3,7 @@
 <?php 
 function printHistory() {
 	$jahrFirst = 2006;
-	$jahrLast = 2019;
+	$jahrLast = 2020;
 	for ($jahr = $jahrLast; $jahr >= $jahrFirst; $jahr--) {
 		?>
 		<a href="history.php?jahr=<?php print $jahr ?>">Belegungsplan f&uuml;r das Jahr <?php print $jahr ?></a>
@@ -21,7 +21,7 @@ function printHistory() {
 	</head>
 	<body>
 		
-		<?php printYear(2020, true, true, "giusi.php"); ?>
+		<?php printYear(2021, true, true, "giusi.php"); ?>
 		
 		<!-- vergangene und zuk&uuml;nftige Jahre -->
 		<div id="history">
